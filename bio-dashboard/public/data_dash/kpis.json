@@ -1,0 +1,23 @@
+{
+  "total_navios": 21,
+  "navios_por_classe": [
+    {
+      "quantidade": "Suezmax",
+      "count": 8
+    },
+    {
+      "quantidade": "Aframax",
+      "count": 5
+    },
+    {
+      "quantidade": "MR 2",
+      "count": 4
+    },
+    {
+      "quantidade": "Gaseiro 7k",
+      "count": 4
+    }
+  ],
+  "total_inspecoes_iws": 29,
+  "tipo_incrustacao_mais_comum": "Craca, alga e limo"
+}

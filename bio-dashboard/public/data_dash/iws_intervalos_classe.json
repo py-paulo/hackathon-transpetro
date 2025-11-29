@@ -1,0 +1,16 @@
+[
+  {
+    "classe":"Aframax",
+    "qtd_navios_com_historico":2,
+    "media_mediana_dias_entre_iws":395.75,
+    "min_mediana_dias_entre_iws":36.0,
+    "max_mediana_dias_entre_iws":755.5
+  },
+  {
+    "classe":"Suezmax",
+    "qtd_navios_com_historico":5,
+    "media_mediana_dias_entre_iws":452.6,
+    "min_mediana_dias_entre_iws":258.0,
+    "max_mediana_dias_entre_iws":619.0
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "Embarcação":"Bruno Lima",
+    "ultima_iws":"2024-05-08",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Carla Silva",
+    "ultima_iws":"2025-10-10",
+    "dias_previstos_ate_proxima_iws":1.200805628,
+    "data_prevista_proxima_iws":"2025-10-11"
+  },
+  {
+    "Embarcação":"Daniel Pereira",
+    "ultima_iws":"2021-01-18",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Eduardo Costa",
+    "ultima_iws":"2025-01-11",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Felipe Ribeiro",
+    "ultima_iws":"2022-12-31",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Fábio Santos",
+    "ultima_iws":"2024-08-10",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Giselle Carvalho",
+    "ultima_iws":"2023-01-10",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Henrique Alves",
+    "ultima_iws":"2025-09-26",
+    "dias_previstos_ate_proxima_iws":1.0,
+    "data_prevista_proxima_iws":"2025-09-27"
+  },
+  {
+    "Embarcação":"Marcos Cavalcanti",
+    "ultima_iws":"2024-01-28",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Maria Valentina",
+    "ultima_iws":"2024-11-04",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Paulo Moura",
+    "ultima_iws":"2025-05-18",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Rafael Santos",
+    "ultima_iws":"2025-08-23",
+    "dias_previstos_ate_proxima_iws":12.3891102716,
+    "data_prevista_proxima_iws":"2025-09-04"
+  },
+  {
+    "Embarcação":"Raul Martins",
+    "ultima_iws":"2024-12-08",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Renato Gomes",
+    "ultima_iws":"2025-09-22",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Rodrigo Pinheiro",
+    "ultima_iws":"2023-08-16",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Romario Silva",
+    "ultima_iws":"2025-11-10",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  },
+  {
+    "Embarcação":"Victor Oliveira",
+    "ultima_iws":"2021-03-03",
+    "dias_previstos_ate_proxima_iws":null,
+    "data_prevista_proxima_iws":null
+  }
+]
