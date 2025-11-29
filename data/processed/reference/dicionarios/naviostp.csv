@@ -1,0 +1,7 @@
+Campo,Descrição,Unidade
+Nome,Nome da embarcação,-
+Datahora,Data e hora em que o dado foi coletado,DateTime
+Rumo,Direção em que a proa do navio aponta em relação ao Norte magnético.,°
+Velocidade,Velocidade de navegação,nós
+Latitude,Localização da embarcação - Latitude,°
+Longitude,Localização da embarcação - Longitude,°

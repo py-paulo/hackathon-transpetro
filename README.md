@@ -31,8 +31,51 @@ A Transpetro é a maior companhia de logística multimodal de petróleo, derivad
 
 ## Proposta de solução
 
-A ideia central é construir uma plataforma com interface web que faça a integração dos dados disponíveis dos navios (os mesmo citados acima) com dados históricos de bioincrustação em navios, para que uma IA faça previsões de quando deve ser feitas as limpezas e previsões de e economia / gasto.
+A ideia central é construir uma plataforma que integre os dados disponíveis de consumo, navegação, registros de inspeções, condições ambientais, caraceterísticas das embarcações, entre outros, para realizar análises sobre os impactos de bioincrustações no desempenho dos navios e com base nessas informações geradas, criar previsões sobre estimativas de custos/gasto de combustível e limpeza de forma a melhorar a eficiência dos navios. Aplicando algoritmos de Machine Learning para processamento dos dados brutos e I.A para análises e cruzamento de dados mais complexos.
+
+> Resumo: Uma plataforma que integre os dados disponíveis das embarcações, para realizar análises sobre os impactos de bioincrustações no desempenho dos navios e com base nessas informações geradas, criar previsões sobre estimativas de combustível e limpeza de forma a melhorar a eficiência dos navios. Aplicando algoritmos de Machine Learning para processamento dos dados brutos e I.A para análises e cruzamento de dados mais complexos.
+
+### Pilares da Solução
 
 O ponto central é como os dados de navegação são coletados frequentemente, as previsões da IA podem ser refinadas com base nas interações, ou seja, sua previsão vai está sempre sendo testada e recebendo dados reais referente a elas, tornando-se um algoritmo cada vez mais robusto de acertivo.
 
 A aplicação web é responsável por gerar gráficos e previsões em relação aos dados coletados e previsões.
+
+Um ponto de destaque da solução é integrar o uso de algoritmos de ML com a análise e interpretação mais robusta da I.A usando para cruzar informações não tão estruturadas com resultados de análises de ML, podendo assim trazer insights inteligentes para os dados brutos e processados.
+
+Histórico digitalizado de todas as inspeções e limpezas.
+
+Insights em linguagem natural explicando a causa raiz dos problemas.
+
+Calculadora de Decisão: Simulação financeira que compara "Custo da Limpeza" vs. "Prejuízo de Combustível", indicando o ponto ótimo de manutenção.
+
+### Impacto Esperado (ROI & ESG)
+
+Econômico: Redução do consumo de combustível (bunker) através da manutenção no tempo ótimo (evitando navegar com casco sujo e evitando limpezas desnecessárias).
+
+Ambiental: Redução direta das emissões de CO2, alinhando a Transpetro às metas de descarbonização da IMO (Organização Marítima Internacional).
+
+> Cruzar informações de custo de combustível com dados em tempo real do preço do combustível
+
+## Proposta de Valor
+
+Transformamos dados brutos em inteligência financeira e ambiental. Nossa plataforma une Machine Learning e IA para monitorar a bioincrustação, prevendo o ponto exato de equilíbrio econômico para manutenção. O resultado é a máxima eficiência de combustível.
+
+Entregamos uma Calculadora de Decisão que elimina o 'achismo', garantindo que cada limpeza seja realizada no momento que maximiza o ROI e assegura a conformidade com as metas de descarbonização da IMO.
+
+Algoritmo que aprende continuamente: cada viagem valida e refina as previsões automaticamente.
+
+### Métricas
+
+* Calcular "desvio de consumo esperado" como proxy de bioincrustação.
+
+## Brainstorm
+
+### Interface web
+
+* Resumo dos dados
+    * Linha temporal de consumo de combustível.
+        * navio
+        * classe
+        * porte
+    

@@ -1,0 +1,9 @@
+Campo,Descrição,Unidade
+Sigla,Sigla embarcação,-
+Nome do navio,Nome da embarcação,-
+Tipo,Classe da embarcação,-
+Tipo,Tipo de carga transportada,-
+Classe,Número da classe da embarcação,-
+Data da aplicacao,"Data da primeira aplicação do revestimento do casco. Caso não haja menção a outra aplicação de tinta, considere que a tinta foi reaplicada na última docagem.",Data
+Cr1. Período base de verificação,Período analisado para avaliar tempo parado,Dias
+Cr1. Parada máxima acumulada no período,Período em que o navio esteve parado dentro do período analisado,Dias

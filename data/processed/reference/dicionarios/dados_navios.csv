@@ -1,0 +1,9 @@
+Campo,Descrição,Unidade
+Nome do navio,Nome da embarcação,-
+Classe,Classe da embarcação,-
+Tipo,Tipo de carga transportada,-
+Porte Bruto,Diferença entre o seu peso máximo da embarcação (com carga máxima) e o seu peso leve (descarregada). Essa medida representa a quantidade total de peso que o navio pode transportar de forma segura.,mt [tonelada métrica]
+Comprimento total (m),Maior distância entre os pontos extremos a vante e a ré,m
+Boca (m),Maior largura do casco medida entre as faces internas das chapas do costado (bombordo e boreste),m
+Calado (m),Distância vertical da quilha até a linha d'água,m
+Pontal (m),Distância vertical do topo da quilha (fundo) até o convés principal,m

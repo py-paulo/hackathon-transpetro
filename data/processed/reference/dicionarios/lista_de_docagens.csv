@@ -1,0 +1,4 @@
+Campo,Descrição,Unidade
+Navio,Nome da embarcação,-
+Docagem,Data da docagem (Obra de manutenção das embarcações em que todo o casco do navio é limpo e a tinta anti-fouling é reaplicada),Data
+Tipo,Tipo de docagem realizada,-
