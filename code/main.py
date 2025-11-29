@@ -10,7 +10,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 DATA_DIR = Path(__file__).parent.joinpath('..', 'data')
-print(DATA_DIR.absolute().parent)
 
 def load_data():
     logger.info("📂 Carregando dados...")
