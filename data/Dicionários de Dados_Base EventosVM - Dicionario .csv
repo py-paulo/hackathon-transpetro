@@ -1,0 +1,23 @@
+Campo,Descrição,Unidade
+sessionId,Código de Sessão do Navio,-
+shipName,Nome do Navio,-
+class,Classe do Navio,-
+eventName,Evento de navegação,-
+startGMTDate,Data de início do GMT,DateTime
+endGMTDate,Data de final do GMT,DateTime
+duration,Duração,horas
+distance,Distância navegada do Navio,nm [milhas náuticas]
+aftDraft,Calado a ré,m
+fwdDraft,Calado a vante,m
+midDraft,Calado a meia-nau,m
+TRIM,Diferença entre calado a ré e calado a vante,m
+displacement,Peso do volume de água deslocado pelo navio,ton
+beaufortScale,Escala Beaufort,-
+seaCondition,Condição do mar,-
+beaufortScaleDesc,Descrição da escala Beaufort,-
+seaConditionDesc,Descrição das condições do mar,-
+speed,Velocidade de navegação,nós
+speedGps,Velocidade de navegação GPS,nós
+Porto,Cidade onde se localiza o Porto,-
+decLatitude,Localização da embarcação - Latitude,°
+decLongitude,Localização da embarcação - Longitude,°
