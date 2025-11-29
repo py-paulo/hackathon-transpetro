@@ -1,0 +1,242 @@
+{
+  "embarcacao": [
+    {
+      "quantidade": "Craca, alga e limo",
+      "count": 8
+    },
+    {
+      "quantidade": "Moles",
+      "count": 4
+    },
+    {
+      "quantidade": "Cracas e limo",
+      "count": 3
+    },
+    {
+      "quantidade": "Moles e duras",
+      "count": 2
+    },
+    {
+      "quantidade": "NORMAN",
+      "count": 2
+    },
+    {
+      "quantidade": "Não avaliado",
+      "count": 2
+    },
+    {
+      "quantidade": "Duras no fundo",
+      "count": 1
+    },
+    {
+      "quantidade": "Alga e limo",
+      "count": 1
+    },
+    {
+      "quantidade": "Cracas (50%) e limo (10%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Duras e Moles",
+      "count": 1
+    },
+    {
+      "quantidade": "Craca e alga",
+      "count": 1
+    },
+    {
+      "quantidade": "Limo leve e algas. Cracas concentradas a ré e dispersas no restante do costado",
+      "count": 1
+    }
+  ],
+  "fundo_chato": [
+    {
+      "quantidade": "Cracas e limo",
+      "count": 5
+    },
+    {
+      "quantidade": "Craca, alga e limo",
+      "count": 4
+    },
+    {
+      "quantidade": "NORMAN",
+      "count": 2
+    },
+    {
+      "quantidade": "Não avaliado",
+      "count": 2
+    },
+    {
+      "quantidade": "Incrustações duras e moles",
+      "count": 1
+    },
+    {
+      "quantidade": "Duras",
+      "count": 1
+    },
+    {
+      "quantidade": "Moles (5%) e Duras (5%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Alga e limo",
+      "count": 1
+    },
+    {
+      "quantidade": "Cracas",
+      "count": 1
+    },
+    {
+      "quantidade": "Moles (60%) e Duras (10%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Moles",
+      "count": 1
+    },
+    {
+      "quantidade": "Duras e Moles",
+      "count": 1
+    },
+    {
+      "quantidade": "Craca e limo",
+      "count": 1
+    },
+    {
+      "quantidade": "Craca e alga",
+      "count": 1
+    },
+    {
+      "quantidade": "Cracas dispersas",
+      "count": 1
+    }
+  ],
+  "costado": [
+    {
+      "quantidade": "Craca, alga e limo",
+      "count": 7
+    },
+    {
+      "quantidade": "Cracas e limo",
+      "count": 4
+    },
+    {
+      "quantidade": "Moles",
+      "count": 2
+    },
+    {
+      "quantidade": "NORMAN",
+      "count": 2
+    },
+    {
+      "quantidade": "Moles (100%) e Duras (20%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Não consta no relatório",
+      "count": 1
+    },
+    {
+      "quantidade": "Alga e limo",
+      "count": 1
+    },
+    {
+      "quantidade": "Cracas (50%) e limo (10%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Moles (70%) e Duras (20%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Moles ",
+      "count": 1
+    },
+    {
+      "quantidade": "Algas (80%) e cracas (15%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Algas (20%) e cracas (5%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Duras e Moles",
+      "count": 1
+    },
+    {
+      "quantidade": "Não avaliado",
+      "count": 1
+    },
+    {
+      "quantidade": "Craca e alga",
+      "count": 1
+    },
+    {
+      "quantidade": "Limo leve e algas. Cracas concentradas a ré e dispersas no restante do costado",
+      "count": 1
+    }
+  ],
+  "helice": [
+    {
+      "quantidade": "Não avaliado",
+      "count": 5
+    },
+    {
+      "quantidade": "Moles e Duras",
+      "count": 3
+    },
+    {
+      "quantidade": "Craca, alga e limo",
+      "count": 3
+    },
+    {
+      "quantidade": "Moles",
+      "count": 2
+    },
+    {
+      "quantidade": "Cracas e limo",
+      "count": 2
+    },
+    {
+      "quantidade": "Cracas, limo e calcárea",
+      "count": 2
+    },
+    {
+      "quantidade": "Alga, limo e calcárea",
+      "count": 1
+    },
+    {
+      "quantidade": "Alga e limo",
+      "count": 1
+    },
+    {
+      "quantidade": "Craca, alga, limo e calcárea",
+      "count": 1
+    },
+    {
+      "quantidade": "Cracas (10%), Calcárea (100%) e Crescimento marinho (80%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Moles ",
+      "count": 1
+    },
+    {
+      "quantidade": "Cracas e calcárea",
+      "count": 1
+    },
+    {
+      "quantidade": "Moles (30%) e Duras (70%)",
+      "count": 1
+    },
+    {
+      "quantidade": "Cracas, alga, limo e calcárea",
+      "count": 1
+    },
+    {
+      "quantidade": "Craca e alga",
+      "count": 1
+    }
+  ]
+}

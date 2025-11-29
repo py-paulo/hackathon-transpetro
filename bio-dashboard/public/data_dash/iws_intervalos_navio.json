@@ -1,0 +1,72 @@
+[
+  {
+    "Embarcação":"Carla Silva",
+    "Classe":"Aframax",
+    "NOME_NORMALIZADO":"CARLA SILVA",
+    "qtd_intervalos":2,
+    "media_dias_entre_iws":755.5,
+    "mediana_dias_entre_iws":755.5,
+    "min_dias_entre_iws":42,
+    "max_dias_entre_iws":1469
+  },
+  {
+    "Embarcação":"Felipe Ribeiro",
+    "Classe":"Suezmax",
+    "NOME_NORMALIZADO":"FELIPE RIBEIRO",
+    "qtd_intervalos":1,
+    "media_dias_entre_iws":483.0,
+    "mediana_dias_entre_iws":483.0,
+    "min_dias_entre_iws":483,
+    "max_dias_entre_iws":483
+  },
+  {
+    "Embarcação":"Henrique Alves",
+    "Classe":"Suezmax",
+    "NOME_NORMALIZADO":"HENRIQUE ALVES",
+    "qtd_intervalos":3,
+    "media_dias_entre_iws":509.3333333333,
+    "mediana_dias_entre_iws":335.0,
+    "min_dias_entre_iws":1,
+    "max_dias_entre_iws":1192
+  },
+  {
+    "Embarcação":"Paulo Moura",
+    "Classe":"Suezmax",
+    "NOME_NORMALIZADO":"PAULO MOURA",
+    "qtd_intervalos":1,
+    "media_dias_entre_iws":568.0,
+    "mediana_dias_entre_iws":568.0,
+    "min_dias_entre_iws":568,
+    "max_dias_entre_iws":568
+  },
+  {
+    "Embarcação":"Rafael Santos",
+    "Classe":"Suezmax",
+    "NOME_NORMALIZADO":"RAFAEL SANTOS",
+    "qtd_intervalos":2,
+    "media_dias_entre_iws":258.0,
+    "mediana_dias_entre_iws":258.0,
+    "min_dias_entre_iws":74,
+    "max_dias_entre_iws":442
+  },
+  {
+    "Embarcação":"Raul Martins",
+    "Classe":"Suezmax",
+    "NOME_NORMALIZADO":"RAUL MARTINS",
+    "qtd_intervalos":1,
+    "media_dias_entre_iws":619.0,
+    "mediana_dias_entre_iws":619.0,
+    "min_dias_entre_iws":619,
+    "max_dias_entre_iws":619
+  },
+  {
+    "Embarcação":"Renato Gomes",
+    "Classe":"Aframax",
+    "NOME_NORMALIZADO":"RENATO GOMES",
+    "qtd_intervalos":1,
+    "media_dias_entre_iws":36.0,
+    "mediana_dias_entre_iws":36.0,
+    "min_dias_entre_iws":36,
+    "max_dias_entre_iws":36
+  }
+]

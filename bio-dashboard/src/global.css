@@ -1,0 +1,44 @@
+:root {
+    --bg-gray: #f5f7fa;
+    --bg-card: #ffffff;
+    --bg-dark: #121212;
+    --bg-card-dark: #1e1e1e;
+
+    --text-dark: #222;
+    --text-light: #f1f1f1;
+
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --primary-dark: #1e40af;
+
+    --radius: 14px;
+    --shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+}
+
+body {
+    margin: 0;
+    background: var(--bg-gray);
+    color: var(--text-dark);
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+.dark body {
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.dark .card {
+    background: var(--bg-card-dark);
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
