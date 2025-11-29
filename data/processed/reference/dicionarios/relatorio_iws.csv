@@ -1,0 +1,15 @@
+Campo,Descrição,Unidade
+Classe,Classe da embarcação,-
+Embarcação,Nome da embarcação,-
+Sigla,Sigla embarcação,-
+Data,Data de realização da operação,Data
+Local de realização,Local de realização da operação,-
+Regiões do casco limpas,Regiões do casco abrangidas pela limpeza,-
+Condição geral da embarcação,Porcentagem da superfície da embarcação inscrutada ou nível de inscrutação conforme NORMAN 401,-
+Tipo de incrustação da embarcação,Tipos de incrustação constatada na embarcação,-
+Condição do fundo chato,Porcentagem da superfície da embarcação inscrutada ou nível de inscrutação conforme NORMAN 401,-
+Tipo de incrustação do fundo chato,Tipos de incrustação constatada no fundo chato,-
+Condição do costado,Porcentagem da superfície da embarcação inscrutada ou nível de inscrutação conforme NORMAN 401,-
+Tipo de incrustação do costado,Tipos de incrustação constatada no costado,-
+Condição do hélice,Porcentagem da superfície da embarcação inscrutada ou nível de inscrutação conforme NORMAN 401,-
+Tipo de incrustação do hélice,Tipos de incrustação constatada no hélice,-

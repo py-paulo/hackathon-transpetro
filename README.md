@@ -57,6 +57,14 @@ Ambiental: Redução direta das emissões de CO2, alinhando a Transpetro às met
 
 > Cruzar informações de custo de combustível com dados em tempo real do preço do combustível
 
+## Proposta de Valor
+
+Transformamos dados brutos em inteligência financeira e ambiental. Nossa plataforma une Machine Learning e IA para monitorar a bioincrustação, prevendo o ponto exato de equilíbrio econômico para manutenção. O resultado é a máxima eficiência de combustível.
+
+Entregamos uma Calculadora de Decisão que elimina o 'achismo', garantindo que cada limpeza seja realizada no momento que maximiza o ROI e assegura a conformidade com as metas de descarbonização da IMO.
+
+Algoritmo que aprende continuamente: cada viagem valida e refina as previsões automaticamente.
+
 ### Métricas
 
 * Calcular "desvio de consumo esperado" como proxy de bioincrustação.
