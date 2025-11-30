@@ -1,0 +1,566 @@
+[
+  {
+    "navio":"BRUNO LIMA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10934.7655555556
+  },
+  {
+    "navio":"BRUNO LIMA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":1853.9611111111
+  },
+  {
+    "navio":"BRUNO LIMA",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":3120.7447222222
+  },
+  {
+    "navio":"BRUNO LIMA",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":2735.335
+  },
+  {
+    "navio":"BRUNO LIMA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":392.7094444444
+  },
+  {
+    "navio":"BRUNO LIMA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":742.4069444444
+  },
+  {
+    "navio":"CARLA SILVA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":11961.635
+  },
+  {
+    "navio":"CARLA SILVA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":165.6591666667
+  },
+  {
+    "navio":"CARLA SILVA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":1733.4563888889
+  },
+  {
+    "navio":"DANIEL PEREIRA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":13808.3452777778
+  },
+  {
+    "navio":"DANIEL PEREIRA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":338.5902777778
+  },
+  {
+    "navio":"DANIEL PEREIRA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":2141.4697222222
+  },
+  {
+    "navio":"DANIEL PEREIRA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":483.9630555556
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10783.9669444444
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":1462.4322222222
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":2524.1036111111
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":1288.3877777778
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":808.6969444444
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":1344.9661111111
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":7887.5175
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":4406.1655555556
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":3362.695
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":2591.8508333333
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":319.85
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":625.1108333333
+  },
+  {
+    "navio":"FELIPE RIBEIRO",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":7180.4041666667
+  },
+  {
+    "navio":"FELIPE RIBEIRO",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":83.7683333333
+  },
+  {
+    "navio":"FELIPE RIBEIRO",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":8929.0425
+  },
+  {
+    "navio":"FELIPE RIBEIRO",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":253.5463888889
+  },
+  {
+    "navio":"GABRIELA MARTINS",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10642.8041666667
+  },
+  {
+    "navio":"GABRIELA MARTINS",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":410.5091666667
+  },
+  {
+    "navio":"GABRIELA MARTINS",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":5.0
+  },
+  {
+    "navio":"GABRIELA MARTINS",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":5348.9183333333
+  },
+  {
+    "navio":"GABRIELA MARTINS",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":405.0875
+  },
+  {
+    "navio":"GISELLE CARVALHO",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9849.5380555556
+  },
+  {
+    "navio":"GISELLE CARVALHO",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":16.3275
+  },
+  {
+    "navio":"GISELLE CARVALHO",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":5861.3105555556
+  },
+  {
+    "navio":"GISELLE CARVALHO",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":287.3972222222
+  },
+  {
+    "navio":"HENRIQUE ALVES",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":11364.9822222222
+  },
+  {
+    "navio":"HENRIQUE ALVES",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":4728.5616666667
+  },
+  {
+    "navio":"HENRIQUE ALVES",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":400.7155555556
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9280.4491666667
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":2406.545
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":1848.6702777778
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":1120.85
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":584.7697222222
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":1694.7597222222
+  },
+  {
+    "navio":"MARCOS CAVALCANTI",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":12828.6641666667
+  },
+  {
+    "navio":"MARCOS CAVALCANTI",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":44.2555555556
+  },
+  {
+    "navio":"MARCOS CAVALCANTI",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":4382.0536111111
+  },
+  {
+    "navio":"MARCOS CAVALCANTI",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":270.3433333333
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":8951.6688888889
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":3816.0969444444
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":3406.9955555556
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":3406.5136111111
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":194.0233333333
+  },
+  {
+    "navio":"PAULO MOURA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":13943.9197222222
+  },
+  {
+    "navio":"PAULO MOURA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":466.5233333333
+  },
+  {
+    "navio":"PAULO MOURA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":910.2225
+  },
+  {
+    "navio":"PAULO MOURA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":186.3152777778
+  },
+  {
+    "navio":"RAFAEL SANTOS",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9545.5869444444
+  },
+  {
+    "navio":"RAFAEL SANTOS",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":250.9211111111
+  },
+  {
+    "navio":"RAFAEL SANTOS",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":6121.2083333333
+  },
+  {
+    "navio":"RAFAEL SANTOS",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":372.4363888889
+  },
+  {
+    "navio":"RAUL MARTINS",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":15169.7855555556
+  },
+  {
+    "navio":"RAUL MARTINS",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":345.1102777778
+  },
+  {
+    "navio":"RAUL MARTINS",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":647.3525
+  },
+  {
+    "navio":"RAUL MARTINS",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":146.3761111111
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":8871.5158333333
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":2497.8911111111
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":4698.1036111111
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":3284.8566666667
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":211.3711111111
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":171.9519444444
+  },
+  {
+    "navio":"RODRIGO PINHEIRO",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10566.5355555556
+  },
+  {
+    "navio":"RODRIGO PINHEIRO",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":93.4544444444
+  },
+  {
+    "navio":"RODRIGO PINHEIRO",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":5455.4522222222
+  },
+  {
+    "navio":"RODRIGO PINHEIRO",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":155.9508333333
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10415.4308333333
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":2315.1869444444
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":2693.6663888889
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":1323.9911111111
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":736.1138888889
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":431.6275
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9107.0902777778
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":2503.7266666667
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "regiao":"Norte",
+    "tipo_agua":"doce",
+    "tempo_horas":3521.8833333333
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "regiao":"Norte",
+    "tipo_agua":"salgada",
+    "tempo_horas":1500.5066666667
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":414.1669444444
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":1391.9419444444
+  },
+  {
+    "navio":"VICTOR OLIVEIRA",
+    "regiao":"Fora",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9792.0794444444
+  },
+  {
+    "navio":"VICTOR OLIVEIRA",
+    "regiao":"Nordeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":151.9755555556
+  },
+  {
+    "navio":"VICTOR OLIVEIRA",
+    "regiao":"Sudeste",
+    "tipo_agua":"salgada",
+    "tempo_horas":6474.3697222222
+  },
+  {
+    "navio":"VICTOR OLIVEIRA",
+    "regiao":"Sul",
+    "tipo_agua":"salgada",
+    "tempo_horas":574.7275
+  }
+]

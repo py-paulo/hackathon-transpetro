@@ -1,0 +1,242 @@
+[
+  {
+    "navio":"BRUNO LIMA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10934.7655555556
+  },
+  {
+    "navio":"BRUNO LIMA",
+    "tipo_agua":"doce",
+    "tempo_horas":3120.7447222222
+  },
+  {
+    "navio":"BRUNO LIMA",
+    "tipo_agua":"salgada",
+    "tempo_horas":5724.4125
+  },
+  {
+    "navio":"CARLA SILVA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":11961.635
+  },
+  {
+    "navio":"CARLA SILVA",
+    "tipo_agua":"salgada",
+    "tempo_horas":1899.1155555556
+  },
+  {
+    "navio":"DANIEL PEREIRA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":13808.3452777778
+  },
+  {
+    "navio":"DANIEL PEREIRA",
+    "tipo_agua":"salgada",
+    "tempo_horas":2964.0230555556
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10783.9669444444
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "tipo_agua":"doce",
+    "tempo_horas":2524.1036111111
+  },
+  {
+    "navio":"EDUARDO COSTA",
+    "tipo_agua":"salgada",
+    "tempo_horas":4904.4830555556
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":7887.5175
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "tipo_agua":"doce",
+    "tempo_horas":3362.695
+  },
+  {
+    "navio":"FABIO SANTOS",
+    "tipo_agua":"salgada",
+    "tempo_horas":7942.9772222222
+  },
+  {
+    "navio":"FELIPE RIBEIRO",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":7180.4041666667
+  },
+  {
+    "navio":"FELIPE RIBEIRO",
+    "tipo_agua":"salgada",
+    "tempo_horas":9266.3572222222
+  },
+  {
+    "navio":"GABRIELA MARTINS",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10642.8041666667
+  },
+  {
+    "navio":"GABRIELA MARTINS",
+    "tipo_agua":"salgada",
+    "tempo_horas":6169.515
+  },
+  {
+    "navio":"GISELLE CARVALHO",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9849.5380555556
+  },
+  {
+    "navio":"GISELLE CARVALHO",
+    "tipo_agua":"salgada",
+    "tempo_horas":6165.0352777778
+  },
+  {
+    "navio":"HENRIQUE ALVES",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":11364.9822222222
+  },
+  {
+    "navio":"HENRIQUE ALVES",
+    "tipo_agua":"salgada",
+    "tempo_horas":5129.2772222222
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9280.4491666667
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "tipo_agua":"doce",
+    "tempo_horas":1848.6702777778
+  },
+  {
+    "navio":"LUCAS MEDONCA",
+    "tipo_agua":"salgada",
+    "tempo_horas":5806.9244444444
+  },
+  {
+    "navio":"MARCOS CAVALCANTI",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":12828.6641666667
+  },
+  {
+    "navio":"MARCOS CAVALCANTI",
+    "tipo_agua":"salgada",
+    "tempo_horas":4696.6525
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":8951.6688888889
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "tipo_agua":"doce",
+    "tempo_horas":3406.9955555556
+  },
+  {
+    "navio":"MARIA VALENTINA",
+    "tipo_agua":"salgada",
+    "tempo_horas":7416.6338888889
+  },
+  {
+    "navio":"PAULO MOURA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":13943.9197222222
+  },
+  {
+    "navio":"PAULO MOURA",
+    "tipo_agua":"salgada",
+    "tempo_horas":1563.0611111111
+  },
+  {
+    "navio":"RAFAEL SANTOS",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9545.5869444444
+  },
+  {
+    "navio":"RAFAEL SANTOS",
+    "tipo_agua":"salgada",
+    "tempo_horas":6744.5658333333
+  },
+  {
+    "navio":"RAUL MARTINS",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":15169.7855555556
+  },
+  {
+    "navio":"RAUL MARTINS",
+    "tipo_agua":"salgada",
+    "tempo_horas":1138.8388888889
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":8871.5158333333
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "tipo_agua":"doce",
+    "tempo_horas":4698.1036111111
+  },
+  {
+    "navio":"RICARDO BARBOSA",
+    "tipo_agua":"salgada",
+    "tempo_horas":6166.0708333333
+  },
+  {
+    "navio":"RODRIGO PINHEIRO",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10566.5355555556
+  },
+  {
+    "navio":"RODRIGO PINHEIRO",
+    "tipo_agua":"salgada",
+    "tempo_horas":5704.8575
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":10415.4308333333
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "tipo_agua":"doce",
+    "tempo_horas":2693.6663888889
+  },
+  {
+    "navio":"ROMARIO SILVA",
+    "tipo_agua":"salgada",
+    "tempo_horas":4806.9194444444
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9107.0902777778
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "tipo_agua":"doce",
+    "tempo_horas":3521.8833333333
+  },
+  {
+    "navio":"THIAGO FERNANDE",
+    "tipo_agua":"salgada",
+    "tempo_horas":5810.3422222222
+  },
+  {
+    "navio":"VICTOR OLIVEIRA",
+    "tipo_agua":"desconhecido",
+    "tempo_horas":9792.0794444444
+  },
+  {
+    "navio":"VICTOR OLIVEIRA",
+    "tipo_agua":"salgada",
+    "tempo_horas":7201.0727777778
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "NOME_NORMALIZADO":"BRUNO LIMA",
+    "Classe":"Gaseiro 7k",
+    "Porte Bruto":5095,
+    "distancia_total_nm":188466.42,
+    "combustivel_total":6917.439,
+    "consumo_esperado":41642.7374,
+    "desvio_consumo":-34725.2984
+  },
+  {
+    "NOME_NORMALIZADO":"CARLA SILVA",
+    "Classe":"Aframax",
+    "Porte Bruto":114365,
+    "distancia_total_nm":121710.34,
+    "combustivel_total":16219.85,
+    "consumo_esperado":30780.8498,
+    "desvio_consumo":-14560.9998
+  },
+  {
+    "NOME_NORMALIZADO":"DANIEL PEREIRA",
+    "Classe":"Aframax",
+    "Porte Bruto":114562,
+    "distancia_total_nm":278160.94,
+    "combustivel_total":36523.66,
+    "consumo_esperado":65206.8768,
+    "desvio_consumo":-28683.2168
+  },
+  {
+    "NOME_NORMALIZADO":"EDUARDO COSTA",
+    "Classe":"MR 2",
+    "Porte Bruto":48501,
+    "distancia_total_nm":157048.77,
+    "combustivel_total":13991.1768,
+    "consumo_esperado":36250.0644,
+    "desvio_consumo":-22258.8876
+  },
+  {
+    "NOME_NORMALIZADO":"FABIO SANTOS",
+    "Classe":"Gaseiro 7k",
+    "Porte Bruto":5092,
+    "distancia_total_nm":193729.9,
+    "combustivel_total":7028.787,
+    "consumo_esperado":42800.598,
+    "desvio_consumo":-35771.811
+  },
+  {
+    "NOME_NORMALIZADO":"FELIPE RIBEIRO",
+    "Classe":"Suezmax",
+    "Porte Bruto":157700,
+    "distancia_total_nm":235767.7,
+    "combustivel_total":40333.813,
+    "consumo_esperado":57390.194,
+    "desvio_consumo":-17056.381
+  },
+  {
+    "NOME_NORMALIZADO":"GABRIELA MARTINS",
+    "Classe":"Aframax",
+    "Porte Bruto":114441,
+    "distancia_total_nm":282417.2,
+    "combustivel_total":35188.7233,
+    "consumo_esperado":66139.019,
+    "desvio_consumo":-30950.2957
+  },
+  {
+    "NOME_NORMALIZADO":"GISELLE CARVALHO",
+    "Classe":"Suezmax",
+    "Porte Bruto":156504,
+    "distancia_total_nm":285395.9,
+    "combustivel_total":43913.593,
+    "consumo_esperado":68266.538,
+    "desvio_consumo":-24352.945
+  },
+  {
+    "NOME_NORMALIZADO":"HENRIQUE ALVES",
+    "Classe":"Suezmax",
+    "Porte Bruto":157700,
+    "distancia_total_nm":243196.8,
+    "combustivel_total":37704.4,
+    "consumo_esperado":59024.596,
+    "desvio_consumo":-21320.196
+  },
+  {
+    "NOME_NORMALIZADO":"LUCAS MENDONCA",
+    "Classe":"MR 2",
+    "Porte Bruto":48573,
+    "distancia_total_nm":162840.18,
+    "combustivel_total":13353.13,
+    "consumo_esperado":37526.6946,
+    "desvio_consumo":-24173.5646
+  },
+  {
+    "NOME_NORMALIZADO":"MARCOS CAVALCANTI",
+    "Classe":"Suezmax",
+    "Porte Bruto":156733,
+    "distancia_total_nm":270284.7,
+    "combustivel_total":38110.071,
+    "consumo_esperado":64950.089,
+    "desvio_consumo":-26840.018
+  },
+  {
+    "NOME_NORMALIZADO":"MARIA VALENTINA",
+    "Classe":"Gaseiro 7k",
+    "Porte Bruto":5097,
+    "distancia_total_nm":197482.7,
+    "combustivel_total":6996.832,
+    "consumo_esperado":43626.389,
+    "desvio_consumo":-36629.557
+  },
+  {
+    "NOME_NORMALIZADO":"PAULO MOURA",
+    "Classe":"Suezmax",
+    "Porte Bruto":156547,
+    "distancia_total_nm":271538.4,
+    "combustivel_total":41114.2907,
+    "consumo_esperado":65219.393,
+    "desvio_consumo":-24105.1023
+  },
+  {
+    "NOME_NORMALIZADO":"RAFAEL SANTOS",
+    "Classe":"Suezmax",
+    "Porte Bruto":156628,
+    "distancia_total_nm":259362.2,
+    "combustivel_total":39339.317,
+    "consumo_esperado":62543.464,
+    "desvio_consumo":-23204.147
+  },
+  {
+    "NOME_NORMALIZADO":"RAUL MARTINS",
+    "Classe":"Suezmax",
+    "Porte Bruto":156523,
+    "distancia_total_nm":274575.5,
+    "combustivel_total":42658.714,
+    "consumo_esperado":65886.715,
+    "desvio_consumo":-23228.001
+  },
+  {
+    "NOME_NORMALIZADO":"RENATO GOMES",
+    "Classe":"Aframax",
+    "Porte Bruto":114481,
+    "distancia_total_nm":273956.76,
+    "combustivel_total":32971.4449,
+    "consumo_esperado":64279.1222,
+    "desvio_consumo":-31307.6773
+  },
+  {
+    "NOME_NORMALIZADO":"RICARDO BARBOSA",
+    "Classe":"Gaseiro 7k",
+    "Porte Bruto":5079,
+    "distancia_total_nm":206109.16,
+    "combustivel_total":7334.213,
+    "consumo_esperado":45523.5802,
+    "desvio_consumo":-38189.3672
+  },
+  {
+    "NOME_NORMALIZADO":"RODRIGO PINHEIRO",
+    "Classe":"Aframax",
+    "Porte Bruto":114434,
+    "distancia_total_nm":316575.7,
+    "combustivel_total":36612.8185,
+    "consumo_esperado":73653.644,
+    "desvio_consumo":-37040.8255
+  },
+  {
+    "NOME_NORMALIZADO":"ROMARIO SILVA",
+    "Classe":"MR 2",
+    "Porte Bruto":48449,
+    "distancia_total_nm":167445.18,
+    "combustivel_total":13333.393,
+    "consumo_esperado":38535.4546,
+    "desvio_consumo":-25202.0616
+  },
+  {
+    "NOME_NORMALIZADO":"THIAGO FERNANDES",
+    "Classe":"MR 2",
+    "Porte Bruto":48573,
+    "distancia_total_nm":150955.7,
+    "combustivel_total":12329.291,
+    "consumo_esperado":34912.109,
+    "desvio_consumo":-22582.818
+  },
+  {
+    "NOME_NORMALIZADO":"VICTOR OLIVEIRA",
+    "Classe":"Suezmax",
+    "Porte Bruto":156492,
+    "distancia_total_nm":242863.18,
+    "combustivel_total":35180.15,
+    "consumo_esperado":58908.9196,
+    "desvio_consumo":-23728.7696
+  }
+]
