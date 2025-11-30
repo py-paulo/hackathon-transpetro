@@ -1,3 +1,4 @@
+// src/App.jsx
 import { useEffect, useState } from "react";
 import "./global.css";
 
@@ -9,6 +10,13 @@ import TabelaNaviosResumo from "./components/TabelaNaviosResumo.jsx";
 import GraficosDashboard from "./components/GraficosDashboard.jsx";
 import MapaAIS from "./components/MapaAIS.jsx";
 import InsightsIA from "./components/InsightsIA.jsx";
+import GraficosAgua from "./components/GraficosAgua.jsx";
+import FiltroNavio from "./components/FiltroNavio.jsx";
+import GraficoTimelineNavio from "./components/GraficoTimelineNavio.jsx";
+import GraficoDesvioConsumo from "./components/GraficoDesvioConsumo.jsx";
+import GraficoConsumoPorClasse from "./components/GraficoConsumoPorClasse.jsx";
+import GraficoConsumoPorPorte from "./components/GraficoConsumoPorPorte.jsx";
+import GraficoConsumoTimelineNavio from "./components/GraficoConsumoTimelineNavio.jsx";
 
 function App() {
 	const [kpis, setKpis] = useState(null);
@@ -20,8 +28,12 @@ function App() {
 	const [erro, setErro] = useState(null);
 	const [previsao, setPrevisao] = useState([]);
 	const [trilhasAIS, setTrilhasAIS] = useState([]);
+	const [tempoRegiao, setTempoRegiao] = useState([]);
+	const [serieDiaria, setSerieDiaria] = useState([]);
+	const [navioSelecionado, setNavioSelecionado] = useState("");
+	const [desvioConsumo, setDesvioConsumo] = useState([]);
 
-	// Novo estado para alternar páginas (Dashboard / Insights)
+	// alternar páginas
 	const [pagina, setPagina] = useState("dashboard");
 
 	useEffect(() => {
@@ -35,6 +47,9 @@ function App() {
 					naviosResumoRes,
 					previsaoRes,
 					trilhasRes,
+					tempoRegiaoRes,
+					serieDiariaRes,
+					desvioRes,
 				] = await Promise.all([
 					fetch("/data_dash/kpis.json"),
 					fetch("/data_dash/iws_intervalos_navio.json"),
@@ -43,6 +58,9 @@ function App() {
 					fetch("/data_dash/navios_resumo.json"),
 					fetch("/data_dash/previsao_iws_navio.json"),
 					fetch("/data_dash/ais_trilhas.json"),
+					fetch("/data_dash/tempo_regiao_agua_navio.json"),
+					fetch("/data_dash/serie_tempo_regiao_navio.json"),
+					fetch("/data_dash/desvio_consumo_navio.json"),
 				]);
 
 				const [
@@ -53,6 +71,9 @@ function App() {
 					naviosResumoJson,
 					previsaoJson,
 					trilhasJson,
+					tempoRegiaoJson,
+					serieDiariaJson,
+					desvioJson,
 				] = await Promise.all([
 					kpisRes.json(),
 					navioRes.json(),
@@ -61,6 +82,9 @@ function App() {
 					naviosResumoRes.json(),
 					previsaoRes.json(),
 					trilhasRes.json(),
+					tempoRegiaoRes.json(),
+					serieDiariaRes.json(),
+					desvioRes.json(),
 				]);
 
 				setKpis(kpisJson);
@@ -68,11 +92,14 @@ function App() {
 				setIntervalosClasse(intervalosClasseJson);
 				setTiposIncrustacao(tiposJson);
 				setNaviosResumo(naviosResumoJson);
-				setPrevisao(previsaoJson); // novo estado
-				setTrilhasAIS(trilhasJson); // novo estado
+				setPrevisao(previsaoJson);
+				setTrilhasAIS(trilhasJson);
+				setTempoRegiao(tempoRegiaoJson);
+				setSerieDiaria(serieDiariaJson);
+				setDesvioConsumo(desvioJson);
 			} catch (e) {
 				console.error(e);
-				setErro("Erro ao carregar dados do dashboard.");
+				setErro("Erro ao carregar dados.");
 			} finally {
 				setCarregando(false);
 			}
@@ -93,9 +120,10 @@ function App() {
 		return <div style={{ padding: 20, color: "red" }}>{erro}</div>;
 	}
 
-	// --------------------------
-	// UI BONITA + MENU PREMIUM
-	// --------------------------
+	// (opcional) se quiser filtrar tempoRegiao por navio selecionado
+	const dadosFiltrados = navioSelecionado
+		? tempoRegiao.filter((t) => t.navio === navioSelecionado)
+		: tempoRegiao;
 
 	return (
 		<div style={{ display: "flex", minHeight: "100vh" }}>
@@ -122,9 +150,8 @@ function App() {
 					onClick={() => setPagina("graficos")}
 					style={botaoSidebar(pagina === "graficos")}
 				>
-					Gráficos
+					Gráficos
 				</button>
-
 				<button
 					onClick={() => setPagina("insights")}
 					style={botaoSidebar(pagina === "insights")}
@@ -132,10 +159,23 @@ function App() {
 					Insights de IA
 				</button>
 				<button
+					onClick={() => setPagina("consumo")}
+					style={botaoSidebar(pagina === "consumo")}
+				>
+					Consumo & Bioincrustação
+				</button>
+
+				<button
 					onClick={() => setPagina("mapas")}
 					style={botaoSidebar(pagina === "mapas")}
 				>
 					Mapas AIS
+				</button>
+				<button
+					onClick={() => setPagina("agua")}
+					style={botaoSidebar(pagina === "agua")}
+				>
+					Água & Regiões
 				</button>
 			</aside>
 
@@ -204,8 +244,46 @@ function App() {
 					/>
 				)}
 
+				{pagina === "consumo" && (
+					<>
+						<FiltroNavio
+							navios={naviosResumo}
+							navioSelecionado={navioSelecionado}
+							onChange={setNavioSelecionado}
+						/>
+
+						<GraficoDesvioConsumo dados={desvioConsumo} />
+						<GraficoConsumoPorClasse dados={desvioConsumo} />
+						<GraficoConsumoPorPorte dados={desvioConsumo} />
+						<GraficoConsumoTimelineNavio
+							eventos={serieDiaria}
+							navio={navioSelecionado}
+						/>
+					</>
+				)}
+
 				{pagina === "mapas" && (
 					<MapaAIS trilhas={trilhasAIS} naviosResumo={naviosResumo} />
+				)}
+
+				{pagina === "agua" && (
+					<>
+						{/* seletor de navio */}
+						<FiltroNavio
+							navios={naviosResumo}
+							navioSelecionado={navioSelecionado}
+							onChange={setNavioSelecionado}
+						/>
+
+						{/* gráficos de água – se quiser, pode trocar tempoRegiao por dadosFiltrados */}
+						<GraficosAgua tempoRegiao={dadosFiltrados} />
+
+						{/* linha do tempo do navio */}
+						<GraficoTimelineNavio
+							serieDiaria={serieDiaria}
+							navioSelecionado={navioSelecionado}
+						/>
+					</>
 				)}
 			</main>
 		</div>
