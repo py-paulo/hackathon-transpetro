@@ -80,6 +80,39 @@ def normalize_name(s: str) -> str:
     )
     return s.strip()
 
+def normalize_incrustacao_label(s: str):
+    """Normaliza rótulos de bioincrustação para reduzir variações de texto.
+
+    Exemplos que passam a ser considerados iguais:
+    - "Craca e mole"  -> "Craca Mole"
+    - "mole / craca"  -> "Craca Mole"
+    - diferenças de acento e caixa também são removidas.
+    """
+    if not isinstance(s, str):
+        return None
+
+    # remove acentos e coloca em minúsculas
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = s.lower().strip()
+
+    if not s:
+        return None
+
+    # substitui separadores por espaço
+    for sep in ["/", "+", "-", ","]:
+        s = s.replace(sep, " ")
+    s = s.replace(" e ", " ")
+
+    # quebra em tokens, ordena e remonta
+    tokens = [t for t in s.split() if t]
+    if not tokens:
+        return None
+
+    tokens = sorted(tokens)
+    # devolve em formato amigável
+    return " ".join(t.capitalize() for t in tokens)
+
 
 def carregar_dados():
     iws = pd.read_excel(DATA_DIR / "Relatorios IWS.xlsx")
@@ -193,8 +226,122 @@ def resumo_intervalos_por_classe(intervalos: pd.DataFrame) -> pd.DataFrame:
     )
     return resumo
 
+# ================================
+# NORMALIZAÇÃO INTELIGENTE DE INCRUSTAÇÃO
+# ================================
+
+def normalizar_incrustacao(txt: str) -> str:
+    if not isinstance(txt, str):
+        return "DESCONHECIDO"
+
+    t = txt.strip().lower()
+
+    substituicoes = {
+        "craca": ["craca", "craca leve", "craca fina", "cracas"],
+        "mole": ["mole", "organismo mole", "moleza"],
+        "algas": ["alga", "algas", "algas diversas"],
+        "mexilhao": ["mexilhão", "mexilhao", "meixilhao"],
+    }
+
+    # combinações tipo “craca e mole”
+    combinacoes = [
+        ("craca", "mole", ["craca e mole", "mole e craca", "craca + mole", "craca/mole"])
+    ]
+
+    for final, palavras in substituicoes.items():
+        for p in palavras:
+            if t == p:
+                return final.upper()
+
+    for a, b, lista in combinacoes:
+        for p in lista:
+            if t == p:
+                return f"{a.upper()} + {b.upper()}"
+
+    return txt.upper()
 
 def mapa_tipos_incrustacao(iws: pd.DataFrame) -> dict:
+    """Gera contagem de tipos de bioincrustação já normalizados.
+
+    O objetivo é reduzir ruído de rótulos duplicados, como
+    "Craca e mole" x "Mole e craca", que passam a ser agregados
+    sob o mesmo nome canônico.
+    """
+
+    def contar_normalizado(col: str):
+        if col not in iws.columns:
+            return []
+
+        serie = iws[col].dropna().astype(str)
+        if serie.empty:
+            return []
+
+        serie_norm = serie.map(normalize_incrustacao_label)
+        serie_norm = serie_norm.dropna()
+        if serie_norm.empty:
+            return []
+
+        vc = serie_norm.value_counts()
+        df = vc.reset_index()
+        df.columns = ["tipo", "quantidade"]
+        return df.to_dict(orient="records")
+
+    return {
+        "embarcacao": contar_normalizado("Tipo de incrustação da embarcação"),
+        "fundo_chato": contar_normalizado("Tipo de incrustação do fundo chato"),
+        "costado": contar_normalizado("Tipo de incrustação do costado"),
+        "helice": contar_normalizado("Tipo de incrustação do hélice"),
+    }
+
+def ranking_global_incrustacao(iws: pd.DataFrame) -> pd.DataFrame:
+    """Ranking único de tipos de bioincrustação em todas as posições do casco.
+
+    Usa os mesmos rótulos normalizados de `mapa_tipos_incrustacao`
+    e consolida embarcação, fundo chato, costado e hélice em uma lista só.
+    """
+    colunas = [
+        "Tipo de incrustação da embarcação",
+        "Tipo de incrustação do fundo chato",
+        "Tipo de incrustação do costado",
+        "Tipo de incrustação do hélice",
+    ]
+
+    series_coletadas = []
+
+    for col in colunas:
+        if col not in iws.columns:
+            continue
+
+        s = iws[col].dropna().astype(str)
+        if s.empty:
+            continue
+
+        s_norm = s.map(normalize_incrustacao_label).dropna()
+        if not s_norm.empty:
+            series_coletadas.append(s_norm)
+
+    if not series_coletadas:
+        return pd.DataFrame(columns=["tipo", "quantidade"])
+
+    serie_total = pd.concat(series_coletadas, ignore_index=True)
+    vc = serie_total.value_counts()
+    df = vc.reset_index()
+    df.columns = ["tipo", "quantidade"]
+    return df
+
+
+    def contar(col):
+        if col not in iws.columns:
+            return []
+
+        temp = iws[col].dropna().apply(normalizar_incrustacao)
+
+        return (
+            temp.value_counts(dropna=True)
+            .reset_index()
+            .rename(columns={"index": "tipo", col: "quantidade"})
+            .to_dict(orient="records")
+        )
     def contar(col):
         if col not in iws.columns:
             return []
@@ -790,6 +937,7 @@ def main():
     salvar_json_df(previsao_iws_df, "previsao_iws_navio.json")
     intervalos_classe = resumo_intervalos_por_classe(intervalos_navio)
     tipos_incrustacao = mapa_tipos_incrustacao(iws)
+    ranking_incrustacao = ranking_global_incrustacao(iws)
     kpis = gerar_kpis(iws, navios)
 
     iws_summary = (
@@ -824,6 +972,10 @@ def main():
         json.dumps(tipos_incrustacao, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+
+    # ranking global para os insights
+    salvar_json_df(ranking_incrustacao, "iws_incrustacao_ranking.json")
+
     (OUT_DIR / "kpis.json").write_text(
         json.dumps(kpis, ensure_ascii=False, indent=2),
         encoding="utf-8",

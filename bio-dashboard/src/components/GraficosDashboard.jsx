@@ -27,11 +27,23 @@ export default function GraficosDashboard({
 	const cores = ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"];
 
 	// PieChart – tipos de incrustação
-	const dadosPizza = (tiposIncrustacao?.embarcacao || []).map((t, idx) => ({
-		name: t.tipo,
-		value: t.quantidade,
-		color: cores[idx % cores.length],
-	}));
+	const dadosPizza = (tiposIncrustacao?.embarcacao || []).reduce(
+		(acc, item) => {
+			const key = item.tipo.toUpperCase();
+			if (!acc[key]) acc[key] = 0;
+			acc[key] += item.quantidade;
+			return acc;
+		},
+		{}
+	);
+
+	const pizzaFormatada = Object.entries(dadosPizza).map(
+		([tipo, quantidade], idx) => ({
+			name: tipo,
+			value: quantidade,
+			color: cores[idx % cores.length],
+		})
+	);
 
 	// BarChart – média de intervalos por classe
 	const dadosClasse = intervalosClasse.map((c) => ({

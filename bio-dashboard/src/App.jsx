@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useEffect, useState } from "react";
 import "./global.css";
 
@@ -13,6 +12,7 @@ import InsightsIA from "./components/InsightsIA.jsx";
 import GraficosAgua from "./components/GraficosAgua.jsx";
 import FiltroNavio from "./components/FiltroNavio.jsx";
 import GraficoTimelineNavio from "./components/GraficoTimelineNavio.jsx";
+
 import GraficoDesvioConsumo from "./components/GraficoDesvioConsumo.jsx";
 import GraficoConsumoPorClasse from "./components/GraficoConsumoPorClasse.jsx";
 import GraficoConsumoPorPorte from "./components/GraficoConsumoPorPorte.jsx";
@@ -32,8 +32,8 @@ function App() {
 	const [serieDiaria, setSerieDiaria] = useState([]);
 	const [navioSelecionado, setNavioSelecionado] = useState("");
 	const [desvioConsumo, setDesvioConsumo] = useState([]);
+	const [rankingIncrustacao, setRankingIncrustacao] = useState([]);
 
-	// alternar páginas
 	const [pagina, setPagina] = useState("dashboard");
 
 	useEffect(() => {
@@ -50,6 +50,7 @@ function App() {
 					tempoRegiaoRes,
 					serieDiariaRes,
 					desvioRes,
+					rankingRes,
 				] = await Promise.all([
 					fetch("/data_dash/kpis.json"),
 					fetch("/data_dash/iws_intervalos_navio.json"),
@@ -61,6 +62,7 @@ function App() {
 					fetch("/data_dash/tempo_regiao_agua_navio.json"),
 					fetch("/data_dash/serie_tempo_regiao_navio.json"),
 					fetch("/data_dash/desvio_consumo_navio.json"),
+					fetch("/data_dash/iws_incrustacao_ranking.json"),
 				]);
 
 				const [
@@ -74,6 +76,7 @@ function App() {
 					tempoRegiaoJson,
 					serieDiariaJson,
 					desvioJson,
+					rankingJson,
 				] = await Promise.all([
 					kpisRes.json(),
 					navioRes.json(),
@@ -85,6 +88,7 @@ function App() {
 					tempoRegiaoRes.json(),
 					serieDiariaRes.json(),
 					desvioRes.json(),
+					rankingRes.json(),
 				]);
 
 				setKpis(kpisJson);
@@ -97,6 +101,7 @@ function App() {
 				setTempoRegiao(tempoRegiaoJson);
 				setSerieDiaria(serieDiariaJson);
 				setDesvioConsumo(desvioJson);
+				setRankingIncrustacao(rankingJson);
 			} catch (e) {
 				console.error(e);
 				setErro("Erro ao carregar dados.");
@@ -120,14 +125,12 @@ function App() {
 		return <div style={{ padding: 20, color: "red" }}>{erro}</div>;
 	}
 
-	// (opcional) se quiser filtrar tempoRegiao por navio selecionado
 	const dadosFiltrados = navioSelecionado
 		? tempoRegiao.filter((t) => t.navio === navioSelecionado)
 		: tempoRegiao;
 
 	return (
 		<div style={{ display: "flex", minHeight: "100vh" }}>
-			{/* SIDEBAR */}
 			<aside
 				style={{
 					width: 240,
@@ -164,7 +167,6 @@ function App() {
 				>
 					Consumo & Bioincrustação
 				</button>
-
 				<button
 					onClick={() => setPagina("mapas")}
 					style={botaoSidebar(pagina === "mapas")}
@@ -179,7 +181,6 @@ function App() {
 				</button>
 			</aside>
 
-			{/* CONTEÚDO PRINCIPAL */}
 			<main style={{ flex: 1, padding: 30 }}>
 				{pagina === "dashboard" && (
 					<>
@@ -241,6 +242,7 @@ function App() {
 						intervalosNavio={intervalosNavio}
 						tipos={tiposIncrustacao}
 						previsao={previsao}
+						rankingIncrustacao={rankingIncrustacao}
 					/>
 				)}
 
@@ -253,10 +255,11 @@ function App() {
 						/>
 
 						<GraficoDesvioConsumo dados={desvioConsumo} />
-						<GraficoConsumoPorClasse dados={desvioConsumo} />
-						<GraficoConsumoPorPorte dados={desvioConsumo} />
+						<GraficoConsumoPorClasse desvio={desvioConsumo} />
+						<GraficoConsumoPorPorte desvio={desvioConsumo} />
+						{/* ainda não temos série temporal de consumo por sessão/navio */}
 						<GraficoConsumoTimelineNavio
-							eventos={serieDiaria}
+							eventos={[]}
 							navio={navioSelecionado}
 						/>
 					</>
@@ -268,17 +271,14 @@ function App() {
 
 				{pagina === "agua" && (
 					<>
-						{/* seletor de navio */}
 						<FiltroNavio
 							navios={naviosResumo}
 							navioSelecionado={navioSelecionado}
 							onChange={setNavioSelecionado}
 						/>
 
-						{/* gráficos de água – se quiser, pode trocar tempoRegiao por dadosFiltrados */}
 						<GraficosAgua tempoRegiao={dadosFiltrados} />
 
-						{/* linha do tempo do navio */}
 						<GraficoTimelineNavio
 							serieDiaria={serieDiaria}
 							navioSelecionado={navioSelecionado}
