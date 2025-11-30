@@ -31,31 +31,98 @@ A Transpetro é a maior companhia de logística multimodal de petróleo, derivad
 
 ## Proposta de solução
 
-A ideia central é construir uma plataforma que integre os dados disponíveis de consumo, navegação, registros de inspeções, condições ambientais, caraceterísticas das embarcações, entre outros, para realizar análises sobre os impactos de bioincrustações no desempenho dos navios e com base nessas informações geradas, criar previsões sobre estimativas de custos/gasto de combustível e limpeza de forma a melhorar a eficiência dos navios. Aplicando algoritmos de Machine Learning para processamento dos dados brutos e I.A para análises e cruzamento de dados mais complexos.
+A ideia central é construir uma plataforma que integre os dados disponíveis de consumo, navegação, registros de inspeções, condições ambientais, características das embarcações, entre outros, para realizar análises sobre os impactos de bioincrustações no desempenho dos navios e com base nessas informações geradas, criar previsões sobre estimativas de custos/gasto de combustível e limpeza de forma a melhorar a eficiência dos navios.
 
-> Resumo: Uma plataforma que integre os dados disponíveis das embarcações, para realizar análises sobre os impactos de bioincrustações no desempenho dos navios e com base nessas informações geradas, criar previsões sobre estimativas de combustível e limpeza de forma a melhorar a eficiência dos navios. Aplicando algoritmos de Machine Learning para processamento dos dados brutos e I.A para análises e cruzamento de dados mais complexos.
+> Resumo: Uma plataforma que integre os dados disponíveis, utilizando algoritmos de Machine Learning para calcular métricas e previsões numéricas, e uma LLM (via RAG - Retrieval-Augmented Generation) para interpretar esses resultados e responder perguntas dos usuários em linguagem natural, melhorando a eficiência das embarcações através de decisões baseadas em dados.
 
 ### Pilares da Solução
 
-O ponto central é como os dados de navegação são coletados frequentemente, as previsões da IA podem ser refinadas com base nas interações, ou seja, sua previsão vai está sempre sendo testada e recebendo dados reais referente a elas, tornando-se um algoritmo cada vez mais robusto de acertivo.
+#### Aprendizado Contínuo do Modelo de ML
 
-A aplicação web é responsável por gerar gráficos e previsões em relação aos dados coletados e previsões.
+O ponto central é como os dados de navegação são coletados frequentemente, alimentando os algoritmos de **Machine Learning** que aprendem continuamente. A cada nova viagem, os dados reais validam as previsões anteriores, permitindo que o modelo refine seus parâmetros automaticamente. Quanto mais a frota navega, mais preciso o algoritmo se torna.
 
-Um ponto de destaque da solução é integrar o uso de algoritmos de ML com a análise e interpretação mais robusta da I.A usando para cruzar informações não tão estruturadas com resultados de análises de ML, podendo assim trazer insights inteligentes para os dados brutos e processados.
+**Como funciona:**
+1. **ML calcula** previsões numéricas (taxa de deterioração, consumo futuro)
+2. **Navio navega** e gera dados reais
+3. **ML compara** previsão vs. realidade e ajusta o modelo
+4. **Próxima previsão** é mais precisa
 
-Histórico digitalizado de todas as inspeções e limpezas.
+#### Inteligência Híbrida: ML + LLM
 
-Insights em linguagem natural explicando a causa raiz dos problemas.
+Um ponto de destaque da solução é integrar o uso de algoritmos de **ML** (para cálculos precisos) com **LLM** (para interpretação e comunicação):
 
-Calculadora de Decisão: Simulação financeira que compara "Custo da Limpeza" vs. "Prejuízo de Combustível", indicando o ponto ótimo de manutenção.
+- **ML (Machine Learning)**: 
+  - Calcula métricas numéricas (regressão, séries temporais)
+  - Faz previsões de consumo e deterioração
+  - Processa dados estruturados
+  - Aprende continuamente com novos dados
 
-### Impacto Esperado (ROI & ESG)
+- **LLM (Large Language Model)**:
+  - Interpreta os resultados do ML
+  - Cruza informações de múltiplas fontes (IWS, docagens, condições ambientais)
+  - Gera insights em linguagem natural
+  - Responde perguntas dos usuários via chat
+  - Explica a causa raiz dos problemas
 
-Econômico: Redução do consumo de combustível (bunker) através da manutenção no tempo ótimo (evitando navegar com casco sujo e evitando limpezas desnecessárias).
+```
+                    ARQUITETURA HÍBRIDA                         
+                                                                 
+   DADOS BRUTOS
+   (CSV, MongoDB)
+       │
+       ▼
+   ┌─────────────────────────────────────┐
+   │      MACHINE LEARNING (ML)          │
+   │  • Regressão linear (deterioração)  │
+   │  • Séries temporais (previsões)     │
+   │  • Agregações e métricas            │
+   │                                     │
+   │  SAÍDA: Números, métricas, gráficos │
+   │  APRENDIZADO: Contínuo (retreino)   │
+   └────────┬────────────────────────────┘
+            │
+            ▼
+   ┌─────────────────────────────────────┐
+   │         API REST (Node.js)          │
+   │  Disponibiliza dados processados    │
+   └────────┬────────────────────────────┘
+            │
+            ▼
+   ┌─────────────────────────────────────┐
+   │      LLM (via RAG)                  │
+   │  • Recebe dados da API como contexto│
+   │  • Interpreta resultados do ML      │
+   │  • Cruza informações complexas      │
+   │  • Gera insights em linguagem       │
+   │    natural                          │
+   │                                     │
+   │  SAÍDA: Texto explicativo,          │
+   │         recomendações, respostas    │
+   └────────┬────────────────────────────┘
+            │
+            ▼
+   DECISÕES INTELIGENTES
+   (Interface Web + Chat)
+```
 
-Ambiental: Redução direta das emissões de CO2, alinhando a Transpetro às metas de descarbonização da IMO (Organização Marítima Internacional).
+#### Funcionalidades da Plataforma
 
-> Cruzar informações de custo de combustível com dados em tempo real do preço do combustível
+- **Insights em linguagem natural**: A LLM explica os dados e a causa raiz dos problemas identificados pelo ML
+- **Visualizações interativas**: A aplicação web gera gráficos e dashboards com os dados coletados e previsões
+- **Histórico digitalizado**: Todas as inspeções e limpezas são registradas e correlacionadas com os dados de consumo
+- **Calculadora de Decisão**: Simulação financeira que compara "Custo da Limpeza" vs. "Prejuízo de Combustível", indicando o ponto ótimo de manutenção
+- **Chat inteligente**: Interface conversacional onde usuários fazem perguntas sobre a frota e recebem respostas contextuais baseadas nos dados processados
+
+#### Divisão de Responsabilidades
+
+| Tarefa | Tecnologia | Por quê |
+|--------|------------|---------|
+| Calcular taxa de deterioração | **ML (Regressão)** | Precisão matemática, aprendizado contínuo |
+| Prever consumo futuro | **ML (Séries Temporais)** | Análise numérica de padrões temporais |
+| Normalizar scores IWS | **ML/Scripts Python** | Transformação de dados estruturados |
+| Explicar resultados em texto | **LLM** | Geração de linguagem natural |
+| Responder perguntas do usuário | **LLM (RAG)** | Compreensão de linguagem natural |
+| Cruzar dados complexos | **LLM** | Raciocínio sobre múltiplos contextos |
 
 ## Proposta de Valor
 
@@ -63,11 +130,11 @@ Transformamos dados brutos em inteligência financeira e ambiental. Nossa plataf
 
 Entregamos uma Calculadora de Decisão que elimina o 'achismo', garantindo que cada limpeza seja realizada no momento que maximiza o ROI e assegura a conformidade com as metas de descarbonização da IMO.
 
-Algoritmo que aprende continuamente: cada viagem valida e refina as previsões automaticamente.
+**Algoritmo de ML que aprende continuamente:** cada viagem valida e refina as previsões automaticamente. O modelo de regressão é retreinado periodicamente com os novos dados, melhorando sua precisão ao longo do tempo.
 
 ### Métricas
 
-#### Taxa de deteriorização do consumo / Taxa de deteriorização do casco
+#### Taxa de deterioração
 
 Para entender o impacto real da bioincrustação em uma embarcação podemos calcular a perda de eficiência através do consumo entre as docagens, que seria a `distância × consumo`, somente períodos de navegação dos dados que temos e entre as datas de docagem, aplicando uma regressão linear da métrica `consumo_por_milha_náutica (ton/nm)` ao longo do tempo.
 
@@ -83,6 +150,19 @@ onde:
 - β₁ = taxa de deterioração (coeficiente angular)
 - t = tempo (em dias desde a última docagem)
 - β₀ = consumo base (intercepto)
+```
+
+**R² (Coeficiente de Determinação)**
+
+Mede quanto da variação do consumo é explicada pelo tempo (bioincrustação).
+
+```
+Valor  R²	 Interpretação
+0.00 - 0.05  ❌ Muito fraco - o tempo quase não explica a variação
+0.05 - 0.15	⚠️ Fraco - outros fatores dominam
+0.15 - 0.30	🔶 Moderado - tempo tem influência perceptível
+0.30 - 0.50	✅ Bom - deterioração é fator relevante
+> 0.50	🎯 Forte - deterioração é fator dominante
 ```
 </details>
 
@@ -173,14 +253,3 @@ eficiencia_transporte = distance / consumo_ton
 ```
 Distância: 282 milhas náuticasConsumo: 47 toneladaseficiencia_transporte = 282 / 47 = 6.0 nm/ton
 ```
-
-## Brainstorm
-
-### Interface web
-
-* Resumo dos dados
-    * Linha temporal de consumo de combustível.
-        * navio
-        * classe
-        * porte
-    
