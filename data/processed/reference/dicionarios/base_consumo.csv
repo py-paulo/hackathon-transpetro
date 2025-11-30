@@ -1,4 +1,0 @@
-Campo,Descrição,Unidade
-SESSION_ID,Código de Sessão do Navio,-
-CONSUMED_QUANTITY,Consumo de combustível do motor de combustão principal (MCP),ton
-DESCRIPTION,Descrição do Combustível utilizado no motor de combustão principal (MCP),-

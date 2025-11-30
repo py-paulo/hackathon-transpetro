@@ -67,7 +67,112 @@ Algoritmo que aprende continuamente: cada viagem valida e refina as previsões a
 
 ### Métricas
 
-* Calcular "desvio de consumo esperado" como proxy de bioincrustação.
+#### Taxa de deteriorização do consumo / Taxa de deteriorização do casco
+
+Para entender o impacto real da bioincrustação em uma embarcação podemos calcular a perda de eficiência através do consumo entre as docagens, que seria a `distância × consumo`, somente períodos de navegação dos dados que temos e entre as datas de docagem, aplicando uma regressão linear da métrica `consumo_por_milha_náutica (ton/nm)` ao longo do tempo.
+
+<details>
+<summary>Conceito de Taxa de Deterioração</summary>
+
+A **taxa de deterioração** é calculada através de **regressão linear** do consumo por milha náutica em função do tempo:
+
+```
+consumo_por_milha(t) = β₀ + β₁ × t + ε
+
+onde:
+- β₁ = taxa de deterioração (coeficiente angular)
+- t = tempo (em dias desde a última docagem)
+- β₀ = consumo base (intercepto)
+```
+</details>
+
+#### Impacto da bioincrustação no consumo
+
+Com os dados de texa de deteriorização do consumo podemos relaciona-los com os *relatórios de IWS* e entender a relação entre a bioinscrutação e o impacto no consumo e fazer previsões futuras.
+
+<details>
+<summary>fórmulas</summary>
+
+**Normalização do Score de Bioincrustação**
+
+O primeiro passo é transformar os dados qualitativos/heterogêneos do IWS em um score numérico normalizado (0 a 1).
+
+**Dados de entrada (IWS)**
+
+Os relatórios IWS contêm valores de condição em diferentes formatos:
+* Valores decimais: 0.1, 0.5, 0.8, 1
+* Porcentagens em texto: "70-80%", "50-60%"
+* Níveis NORMAM 401: 1, 2, 3 (escala de 0-4)
+
+**Fórmula de normalização**
+
+Para valores decimais (0 ≤ x ≤ 1):
+```
+score = x
+```
+
+**Para porcentagens em texto (ex: "70-80%"):**
+
+```
+score = (valor_min + valor_max) / 2 / 100score = (70 + 80) / 2 / 100 = 0.75
+```
+
+**Para níveis NORMAM (1-4):**
+
+```
+score = valor / 4
+```
+
+> Onde nível 4 = 100% incrustado
+
+**O score de bioincrustação é a média das condições disponíveis:**
+
+```
+Score_bioincrustação = (cond_geral + cond_fundo + cond_costado + cond_helice) / n_válidos
+```
+
+**Diagrama de relações**
+
+```
+┌─────────────────┐      tempo       ┌─────────────────┐
+│    DOCAGEM      │ ───────────────► │  BIOINCRUSTAÇÃO │
+│  (Casco limpo)  │                  │   (IWS Score)   │
+└─────────────────┘                  └────────┬────────┘
+                                              │
+                                              │ correlação
+                                              ▼
+┌─────────────────┐                  ┌─────────────────┐
+│    CONSUMO      │ ◄──────────────  │  DETERIORAÇÃO   │
+│  (ton/nm)       │     impacto      │  (ton/nm/mês)   │
+└─────────────────┘                  └─────────────────┘
+```
+
+</details>
+
+#### Consumo mensal
+
+Relação entre `consumo (ton) / distância (milhas náuticas)`
+
+#### Eficiência da embarcação
+
+**Fórmula:**
+
+```
+eficiencia_transporte = distance / consumo_ton
+```
+> Unidade: milhas náuticas por tonelada de combustível (nm/ton)
+
+**Interpretação:**
+
+* Quantas milhas o navio percorre com 1 tonelada de combustível.
+* É o inverso do consumo por milha
+* Maior valor = mais eficiente
+
+**Exemplo:**
+
+```
+Distância: 282 milhas náuticasConsumo: 47 toneladaseficiencia_transporte = 282 / 47 = 6.0 nm/ton
+```
 
 ## Brainstorm
 
