@@ -15,7 +15,7 @@ from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
 
-DATA_DIR = Path(__file__).parent.joinpath('..', 'data')
+DATA_DIR = Path(__file__).parent.joinpath('..', '..', 'data')
 RESULTS_DIR = Path(__file__).parent / "results"
 
 

@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 import warnings
 warnings.filterwarnings('ignore')
 
-DATA_DIR = Path(__file__).parent.joinpath('..', 'data')
+DATA_DIR = Path(__file__).parent.joinpath('..', '..', 'data')
 
 def load_data():
     logger.info("📂 Carregando dados...")
@@ -307,7 +307,7 @@ def main():
     tendencia_df, previsoes_df = modelo_ml_tendencia_por_navio(df)
     modelo_consumo_df = modelo_ml_consumo_por_navio(df)
 
-    output_dir = DATA_DIR / ".." / "code" / "results"
+    output_dir = DATA_DIR / ".." / "code" / "scripts" / "results"
     output_dir.mkdir(exist_ok=True)
 
     consumo_mensal.to_csv(output_dir / "consumo_mensal_por_navio.csv", index=False)

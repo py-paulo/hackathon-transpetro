@@ -9,8 +9,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Caminhos
-DATA_DIR = Path(__file__).parent.joinpath('..', 'data')
-OUTPUT_DIR = DATA_DIR / ".." / "code" / "results"
+DATA_DIR = Path(__file__).parent.joinpath('..', '..', 'data')
+OUTPUT_DIR = DATA_DIR / ".." / "code" / "scripts" / "results"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 # ===============================================

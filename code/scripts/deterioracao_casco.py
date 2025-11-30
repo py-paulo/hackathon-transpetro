@@ -17,7 +17,7 @@ from sklearn.linear_model import LinearRegression
 import warnings
 warnings.filterwarnings('ignore')
 
-DATA_DIR = Path(__file__).parent.joinpath('..', 'data')
+DATA_DIR = Path(__file__).parent.joinpath('..', '..', 'data')
 
 
 def load_data():
@@ -304,7 +304,6 @@ def calcular_taxa_deterioracao(df_navegacao, periodos_df):
 
 def main():
     logger.info("🚢 ANÁLISE DE DETERIORAÇÃO DO CASCO")
-    logger.info("=" * 60)
     
     # 1. Carrega dados
     docagens, consumo, eventos, navios = load_data()
