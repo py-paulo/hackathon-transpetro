@@ -304,16 +304,11 @@ def main():
     df = prepare_dataset(consumo, eventos, navios)
 
     consumo_mensal = calcular_consumo_mensal_por_navio(df)
-    tendencia_df, previsoes_df = modelo_ml_tendencia_por_navio(df)
-    modelo_consumo_df = modelo_ml_consumo_por_navio(df)
 
     output_dir = DATA_DIR / ".." / "code" / "scripts" / "results"
     output_dir.mkdir(exist_ok=True)
 
     consumo_mensal.to_csv(output_dir / "consumo_mensal_por_navio.csv", index=False)
-    tendencia_df.to_csv(output_dir / "tendencia_por_navio.csv", index=False)
-    previsoes_df.to_csv(output_dir / "previsoes_por_navio.csv", index=False)
-    modelo_consumo_df.to_csv(output_dir / "modelo_consumo_por_navio.csv", index=False)
 
     logger.info("✅ ANÁLISE CONCLUÍDA!")
     logger.info(f"📁 Resultados salvos em: {output_dir}")
