@@ -2,16 +2,17 @@
 import { useEffect, useState } from "react";
 import "./global.css";
 
-import { Routes, Route } from 'react-router-dom';
-import Sidebar from './components/sidebar/sidebar';
-import Navbar from './components/navbar/navbar';
-import Dashboard from './components/dashboard/dashboard';
-import Historico from './components/historicoIWS/historicoIWS';
-import MapaAIS from './components/mapaAIS/mapaAIS';
-import Planejamento from './components/planejamentoROI/planejamentoROI';
-import MonitoramentoFrota from './components/monitoramentoFrota/monitoramentoFrota';
-import Chat from './components/chat/chat';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Sidebar from "./components/sidebar/sidebar";
+import Navbar from "./components/navbar/navbar";
+import Dashboard from "./components/dashboard/dashboard";
+import Historico from "./components/historicoIWS/historicoIWS";
+import MapaAIS from "./components/mapaAIS/mapaAIS";
+import Planejamento from "./components/planejamentoROI/planejamentoROI";
+import MonitoramentoFrota from "./components/monitoramentoFrota/monitoramentoFrota";
+import Chat from "./components/chat/chat";
+import Chatbot from "./components/chatbot/Chatbot";
+import "./App.css";
 
 function App() {
 	const [kpis, setKpis] = useState(null);
@@ -122,51 +123,55 @@ function App() {
 				<Navbar />
 				<main className="mainContent">
 					<Routes>
-						<Route 
-							path="/" 
+						<Route
+							path="/"
 							element={
-								<Dashboard 
-									kpis={kpis} 
-									intervalosNavio={intervalosNavio} 
-									intervalosClasse={intervalosClasse} 
-									tiposIncrustacao={tiposIncrustacao} 
-								/>
-							} 
-						/>
-						<Route 
-							path="/frota" 
-							element={
-								<MonitoramentoFrota 
-									trilhas={trilhasAIS} 
-									naviosResumo={naviosResumo} 
+								<Dashboard
+									kpis={kpis}
+									intervalosNavio={intervalosNavio}
+									intervalosClasse={intervalosClasse}
+									tiposIncrustacao={tiposIncrustacao}
 								/>
 							}
 						/>
-						<Route 
-							path="/historico" 
+						<Route
+							path="/frota"
 							element={
-								<Historico 
+								<MonitoramentoFrota
+									trilhas={trilhasAIS}
+									naviosResumo={naviosResumo}
+								/>
+							}
+						/>
+						<Route
+							path="/historico"
+							element={
+								<Historico
 									kpis={kpis}
 									naviosResumo={naviosResumo}
 									intervalosNavio={intervalosNavio}
 									intervalosClasse={intervalosClasse}
 									tiposIncrustacao={tiposIncrustacao}
 								/>
-							} 
+							}
 						/>
-						<Route 
-							path="/mapaais" 
+						<Route
+							path="/mapaais"
 							element={
-								<MapaAIS 
-									trilhas={trilhasAIS} 
-            						naviosResumo={naviosResumo}
+								<MapaAIS
+									trilhas={trilhasAIS}
+									naviosResumo={naviosResumo}
 								/>
-							} 
+							}
 						/>
-						<Route path="/planejamento" element={<Planejamento />} />
+						<Route
+							path="/planejamento"
+							element={<Planejamento />}
+						/>
 						<Route path="/chat" element={<Chat />} />
 					</Routes>
 				</main>
+				<Chatbot />
 			</div>
 		</div>
 	);
