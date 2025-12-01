@@ -3,7 +3,7 @@
 ---
 
 <p align="center"><a href="https://github.com/py-paulo/hackathon-transpetro" target="_blank" rel="noopener noreferrer">
-  <img width="256px" height="126px" src="./assets/logo.png" alt="NAVIA"></a>
+  <img width="256px" height="126px" src="https://github.com/py-paulo/hackathon-transpetro/blob/feat-front/.assets/logo.png" alt="NAVIA"></a>
 </p>
 
 <p align="center">
