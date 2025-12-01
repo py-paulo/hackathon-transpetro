@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-  <img src="https://i.pinimg.com/736x/6f/37/6a/6f376a2917d9be210a03f660c0b77b93.jpg" alt="NAVIA">
+  <img src="https://i.pinimg.com/736x/8c/02/5d/8c025d23b5f266443fb8d3f9cfa2dd4d.jpg" alt="NAVIA">
 </p>
 
 <p align="center">
