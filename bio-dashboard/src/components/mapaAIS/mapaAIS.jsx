@@ -115,11 +115,26 @@ const DateInput = ({ value, onChange }) => (
   />
 );
 
-export default function MapaAIS({ trilhas = [], naviosResumo = [] }) {
+export default function MapaAIS({ 
+    trilhas = [], 
+    naviosResumo = [],
+    dataInicio: dataInicioProp,
+    dataFim: dataFimProp,
+    onDataInicioChange,
+    onDataFimChange
+}) {
     const [classeFiltro, setClasseFiltro] = useState("todas");
     const [navioFiltro, setNavioFiltro] = useState("todos");
-    const [dataInicio, setDataInicio] = useState("");
-    const [dataFim, setDataFim] = useState("");
+    
+    // Usa props se fornecidas, senão usa estado local
+    const [dataInicioLocal, setDataInicioLocal] = useState("");
+    const [dataFimLocal, setDataFimLocal] = useState("");
+    
+    const dataInicio = dataInicioProp !== undefined ? dataInicioProp : dataInicioLocal;
+    const dataFim = dataFimProp !== undefined ? dataFimProp : dataFimLocal;
+    
+    const setDataInicio = onDataInicioChange || setDataInicioLocal;
+    const setDataFim = onDataFimChange || setDataFimLocal;
 
     const classes = useMemo(() => {
         const set = new Set();

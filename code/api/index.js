@@ -337,6 +337,38 @@ app.get('/api/iws-por-tipo', async (req, res) => {
   }
 });
 
+app.get('/api/sugestao_limpeza', async (req, res) => {
+    try {
+      const data = await db.collection('sugestao_limpeza')
+        .find({})
+        .toArray();
+      
+      res.json({
+        success: true,
+        count: data.length,
+        data
+      });
+    } catch (error) {
+      res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+app.get('/api/eficiencia', async (req, res) => {
+  try {
+    const data = await db.collection('eficiencia')
+      .find({})
+      .toArray();
+    
+    res.json({
+      success: true,
+      count: data.length,
+      data
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 // ============================================
 // ROTA GENÉRICA PARA QUALQUER COLLECTION
 // ============================================

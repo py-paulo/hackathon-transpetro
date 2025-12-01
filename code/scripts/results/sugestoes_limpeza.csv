@@ -1,0 +1,198 @@
+navio,classe,prioridade,urgencia,score_urgencia,fatores_considerados,taxa_deterioracao_mes,aumento_percentual,consumo_medio_ton_nm,r2,score_iws_medio,score_iws_max,dias_sem_docagem,ultima_docagem,anos_sem_docagem,custo_limpeza_estimado,custo_combustivel_extra_6meses,consumo_extra_mensal_ton,roi_percentual,economia_anual_estimada,payback_meses,recomendacao,prazo_sugerido_dias
+BRUNO LIMA,Gaseiro 7k,1,CRÍTICA,7.0,Taxa deterioração moderada; Bioincrustação alta; Aumento consumo crítico; Muito tempo sem docagem,0.000928,127.77,0.0603,0.0311,0.6,0.6,1534,2021-09-18,4.2,200000,167040.0,55.68,902.24,2004480.0,1.2,"🔴 **LIMPEZA URGENTE RECOMENDADA**
+
+O BRUNO LIMA apresenta sinais críticos de deterioração. Recomenda-se agendar limpeza imediata (próximos 15-30 dias).
+
+**Indicadores:**
+• Última docagem: 4.2 anos atrás
+• Taxa de deterioração: 0.000928 ton/nm/mês
+• Score de bioincrustação: 60.0%
+• Aumento de consumo: +127.8%
+• ROI estimado: 902.2%
+• Payback: 1.2 meses",15.0
+PAULO MOURA,Suezmax,1,CRÍTICA,6.0,Taxa deterioração crítica; Bioincrustação moderada; Aumento consumo crítico,0.001596,75.24,0.1765,0.0403,0.4,0.7,29,2025-11-01,0.08,500000,287280.0,95.76,589.47,3447360.0,1.74,"🔴 **LIMPEZA URGENTE RECOMENDADA**
+
+O PAULO MOURA apresenta sinais críticos de deterioração. Recomenda-se agendar limpeza imediata (próximos 15-30 dias).
+
+**Indicadores:**
+• Última docagem: 0.1 anos atrás
+• Taxa de deterioração: 0.001596 ton/nm/mês
+• Score de bioincrustação: 40.0%
+• Aumento de consumo: +75.2%
+• ROI estimado: 589.5%
+• Payback: 1.7 meses",15.0
+DANIEL PEREIRA,Aframax,2,ALTA,5.5,Taxa deterioração crítica; Aumento consumo alto; Tempo sem docagem moderado,0.001576,30.52,0.1592,0.008,,,809,2023-09-13,2.22,400000,283680.0,94.56,751.04,3404160.0,1.41,"🟠 **LIMPEZA ALTAMENTE RECOMENDADA**
+
+O DANIEL PEREIRA apresenta deterioração significativa. Recomenda-se agendar limpeza nos próximos 30-60 dias.
+
+**Indicadores:**
+• Última docagem: 2.2 anos atrás
+• Taxa de deterioração: 0.001576 ton/nm/mês
+• Aumento de consumo: +30.5%
+• ROI estimado: 751.0%
+• Payback: 1.4 meses",45.0
+CARLA SILVA,Aframax,2,ALTA,4.0,Bioincrustação crítica; Tempo sem docagem moderado,-0.000969,-13.46,0.1432,0.004,0.792,1.0,643,2024-02-26,1.76,400000,0.0,0.0,-100.0,0.0,,"🟠 **LIMPEZA ALTAMENTE RECOMENDADA**
+
+O CARLA SILVA apresenta deterioração significativa. Recomenda-se agendar limpeza nos próximos 30-60 dias.
+
+**Indicadores:**
+• Última docagem: 1.8 anos atrás
+• Score de bioincrustação: 79.2%
+• ROI estimado: -100.0%",45.0
+HENRIQUE ALVES,Suezmax,2,ALTA,4.5,Bioincrustação crítica; Tempo sem docagem alto,-0.000282,-5.65,0.1785,0.0005,0.725,0.9,1117,2022-11-09,3.06,500000,0.0,0.0,-100.0,0.0,,"🟠 **LIMPEZA ALTAMENTE RECOMENDADA**
+
+O HENRIQUE ALVES apresenta deterioração significativa. Recomenda-se agendar limpeza nos próximos 30-60 dias.
+
+**Indicadores:**
+• Última docagem: 3.1 anos atrás
+• Score de bioincrustação: 72.5%
+• ROI estimado: -100.0%",45.0
+RENATO GOMES,Aframax,2,ALTA,5.0,Taxa deterioração alta; Bioincrustação moderada; Aumento consumo moderado; Tempo sem docagem moderado,0.001162,24.25,0.1224,0.0117,0.425,0.75,693,2024-01-07,1.9,400000,209160.0,69.72,527.48,2509920.0,1.91,"🟠 **LIMPEZA ALTAMENTE RECOMENDADA**
+
+O RENATO GOMES apresenta deterioração significativa. Recomenda-se agendar limpeza nos próximos 30-60 dias.
+
+**Indicadores:**
+• Última docagem: 1.9 anos atrás
+• Taxa de deterioração: 0.001162 ton/nm/mês
+• Score de bioincrustação: 42.5%
+• Aumento de consumo: +24.2%
+• ROI estimado: 527.5%
+• Payback: 1.9 meses",45.0
+EDUARDO COSTA,MR 2,2,ALTA,4.0,Taxa deterioração moderada; Aumento consumo moderado; Muito tempo sem docagem,0.000666,19.41,0.1728,0.0025,0.262,0.262,1385,2022-02-14,3.79,300000,119880.0,39.96,379.52,1438560.0,2.5,"🟠 **LIMPEZA ALTAMENTE RECOMENDADA**
+
+O EDUARDO COSTA apresenta deterioração significativa. Recomenda-se agendar limpeza nos próximos 30-60 dias.
+
+**Indicadores:**
+• Última docagem: 3.8 anos atrás
+• Taxa de deterioração: 0.000666 ton/nm/mês
+• Score de bioincrustação: 26.2%
+• Aumento de consumo: +19.4%
+• ROI estimado: 379.5%
+• Payback: 2.5 meses",45.0
+FELIPE RIBEIRO,Suezmax,3,MODERADA,3.0,Bioincrustação crítica,-0.000728,-7.04,0.1724,0.0012,0.9,1.0,528,2024-06-20,1.45,500000,0.0,0.0,-100.0,0.0,,"🟡 **LIMPEZA RECOMENDADA**
+
+O FELIPE RIBEIRO apresenta sinais de deterioração moderada. Recomenda-se planejar limpeza nos próximos 60-90 dias.
+
+**Indicadores:**
+• Última docagem: 1.4 anos atrás
+• Score de bioincrustação: 90.0%
+• ROI estimado: -100.0%",75.0
+RAFAEL SANTOS,Suezmax,3,MODERADA,3.0,Bioincrustação moderada; Muito tempo sem docagem,-0.000787,-16.99,0.1741,0.0063,0.497,0.725,1241,2022-07-08,3.4,500000,0.0,0.0,-100.0,0.0,,"🟡 **LIMPEZA RECOMENDADA**
+
+O RAFAEL SANTOS apresenta sinais de deterioração moderada. Recomenda-se planejar limpeza nos próximos 60-90 dias.
+
+**Indicadores:**
+• Última docagem: 3.4 anos atrás
+• Score de bioincrustação: 49.7%
+• ROI estimado: -100.0%",75.0
+THIAGO FERNANDES,MR 2,3,MODERADA,3.5,Taxa deterioração moderada; Aumento consumo moderado; Tempo sem docagem alto,0.000958,29.16,0.129,0.0065,,,1047,2023-01-18,2.87,300000,172440.0,57.48,589.76,2069280.0,1.74,"🟡 **LIMPEZA RECOMENDADA**
+
+O THIAGO FERNANDES apresenta sinais de deterioração moderada. Recomenda-se planejar limpeza nos próximos 60-90 dias.
+
+**Indicadores:**
+• Última docagem: 2.9 anos atrás
+• Taxa de deterioração: 0.000958 ton/nm/mês
+• Aumento de consumo: +29.2%
+• ROI estimado: 589.8%
+• Payback: 1.7 meses",75.0
+ROMARIO SILVA,MR 2,3,MODERADA,2.5,Bioincrustação moderada; Tempo sem docagem alto,-0.000474,-13.03,0.1035,0.002,0.45,0.45,927,2023-05-18,2.54,300000,0.0,0.0,-100.0,0.0,,"🟡 **LIMPEZA RECOMENDADA**
+
+O ROMARIO SILVA apresenta sinais de deterioração moderada. Recomenda-se planejar limpeza nos próximos 60-90 dias.
+
+**Indicadores:**
+• Última docagem: 2.5 anos atrás
+• Score de bioincrustação: 45.0%
+• ROI estimado: -100.0%",75.0
+GISELLE CARVALHO,Suezmax,4,BAIXA,1.0,Bioincrustação moderada,-0.005973,-23.87,0.157,0.0117,0.325,0.325,253,2025-03-22,0.69,500000,0.0,0.0,-100.0,0.0,,"🟢 **MONITORAMENTO ATIVO**
+
+O GISELLE CARVALHO apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 0.7 anos atrás
+• Score de bioincrustação: 32.5%
+• ROI estimado: -100.0%",105.0
+MARIA VALENTINA,Gaseiro 7k,4,BAIXA,2.0,Muito tempo sem docagem,0.000153,12.33,0.0563,0.0018,0.0,0.0,1312,2022-04-28,3.59,200000,27540.0,9.18,65.24,330480.0,7.26,"🟢 **MONITORAMENTO ATIVO**
+
+O MARIA VALENTINA apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 3.6 anos atrás
+• Taxa de deterioração: 0.000153 ton/nm/mês
+• Score de bioincrustação: 0.0%
+• Aumento de consumo: +12.3%
+• ROI estimado: 65.2%
+• Payback: 7.3 meses",105.0
+MARCOS CAVALCANTI,Suezmax,4,BAIXA,2.0,Muito tempo sem docagem,7.3e-05,2.22,0.1834,0.0001,0.225,0.225,1667,2021-05-08,4.57,500000,13140.0,4.38,-68.46,157680.0,38.05,"🟢 **MONITORAMENTO ATIVO**
+
+O MARCOS CAVALCANTI apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 4.6 anos atrás
+• Taxa de deterioração: 0.000073 ton/nm/mês
+• Score de bioincrustação: 22.5%
+• Aumento de consumo: +2.2%
+• ROI estimado: -68.5%
+• Payback: 38.0 meses",105.0
+FÁBIO SANTOS,Gaseiro 7k,4,BAIXA,2.0,Muito tempo sem docagem,1.4e-05,1.45,0.0463,0.0,0.0,0.0,1390,2022-02-09,3.81,200000,2520.0,0.84,-84.88,30240.0,79.37,"🟢 **MONITORAMENTO ATIVO**
+
+O FÁBIO SANTOS apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 3.8 anos atrás
+• Taxa de deterioração: 0.000014 ton/nm/mês
+• Score de bioincrustação: 0.0%
+• Aumento de consumo: +1.4%
+• ROI estimado: -84.9%
+• Payback: 79.4 meses",105.0
+GABRIELA MARTINS,Aframax,4,BAIXA,2.0,Taxa deterioração alta,0.001066,14.89,0.1504,0.0024,,,596,2024-04-13,1.63,400000,191880.0,63.96,475.64,2302560.0,2.08,"🟢 **MONITORAMENTO ATIVO**
+
+O GABRIELA MARTINS apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 1.6 anos atrás
+• Taxa de deterioração: 0.001066 ton/nm/mês
+• Aumento de consumo: +14.9%
+• ROI estimado: 475.6%
+• Payback: 2.1 meses",105.0
+RAUL MARTINS,Suezmax,4,BAIXA,1.0,Bioincrustação moderada,-0.007011,-21.75,0.1898,0.0089,0.312,0.425,204,2025-05-10,0.56,500000,0.0,0.0,-100.0,0.0,,"🟢 **MONITORAMENTO ATIVO**
+
+O RAUL MARTINS apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 0.6 anos atrás
+• Score de bioincrustação: 31.2%
+• ROI estimado: -100.0%",105.0
+LUCAS MENDONÇA,MR 2,4,BAIXA,1.0,Tempo sem docagem moderado,-0.002871,-41.9,0.1176,0.0234,,,656,2024-02-13,1.8,300000,0.0,0.0,-100.0,0.0,,"🟢 **MONITORAMENTO ATIVO**
+
+O LUCAS MENDONÇA apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 1.8 anos atrás
+• ROI estimado: -100.0%",105.0
+VICTOR OLIVEIRA,Suezmax,4,BAIXA,1.0,Tempo sem docagem moderado,0.000227,4.29,0.1574,0.0004,,,884,2023-06-30,2.42,500000,40860.0,13.62,-1.94,490320.0,12.24,"🟢 **MONITORAMENTO ATIVO**
+
+O VICTOR OLIVEIRA apresenta deterioração leve. Recomenda-se monitorar e planejar limpeza preventiva nos próximos 90-120 dias.
+
+**Indicadores:**
+• Última docagem: 2.4 anos atrás
+• Taxa de deterioração: 0.000227 ton/nm/mês
+• Aumento de consumo: +4.3%
+• ROI estimado: -1.9%
+• Payback: 12.2 meses",105.0
+RODRIGO PINHEIRO,Aframax,5,NÃO URGENTE,0.0,,-0.000168,-2.08,0.1187,0.0,,,461,2024-08-26,1.26,400000,0.0,0.0,-100.0,0.0,,"✅ **SITUAÇÃO ESTÁVEL**
+
+O RODRIGO PINHEIRO não apresenta sinais críticos de deterioração. Manter monitoramento regular.
+
+**Indicadores:**
+• Última docagem: 1.3 anos atrás
+• ROI estimado: -100.0%",
+RICARDO BARBOSA,Gaseiro 7k,5,NÃO URGENTE,0.0,,8.7e-05,9.15,0.0485,0.0012,,,55,2025-10-06,0.15,200000,15660.0,5.22,-6.04,187920.0,12.77,"✅ **SITUAÇÃO ESTÁVEL**
+
+O RICARDO BARBOSA não apresenta sinais críticos de deterioração. Manter monitoramento regular.
+
+**Indicadores:**
+• Última docagem: 0.2 anos atrás
+• Taxa de deterioração: 0.000087 ton/nm/mês
+• Aumento de consumo: +9.2%
+• ROI estimado: -6.0%
+• Payback: 12.8 meses",

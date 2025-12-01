@@ -22,7 +22,7 @@
     display: flex;
     color: #FFF;
     flex-direction: column;
-    background: #008543;
+    background: #0D4576;
     transition: max-width 0.2s ease-in-out;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.158);;
     transition: box-shadow .5s, transform .3s;
@@ -203,7 +203,7 @@ body.collapsed .logoCollapsed {
   
   .sidebarLinks li a:hover {
     border-radius: 10px;
-    background: #FECC2F;
+    background: #F59E0B;
     transition: all 0.3s ease-in-out;
   }
   
@@ -234,14 +234,14 @@ body.collapsed .logoCollapsed {
   }
   
   .sidebarLinks .active:hover {
-    background: #FECC2F;
+    background: #F59E0B;
     transition: all 0.3s ease-in-out;
   }
   
   .sidebarLinks .active {
     text-decoration: none;
     border-radius: 10px;
-    background: #FECC2F;
+    background: #F59E0B;
     transition: all 0.3s ease-in-out;
   }
   

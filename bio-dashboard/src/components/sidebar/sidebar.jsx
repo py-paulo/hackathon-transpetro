@@ -6,6 +6,7 @@ import style from './style.module.scss';
 // Ícones
 import { MdArrowBackIosNew, MdOutlineDashboard, MdLogout } from 'react-icons/md';
 import { FaShip, FaHistory, FaRegUserCircle, FaCalculator } from 'react-icons/fa';
+import { FaMessage } from 'react-icons/fa6';
 
 const logo = './public/transpetro.png';
 const logoCollapsed = './public/transpetro-logo.png';
@@ -93,18 +94,6 @@ const Sidebar = () => { // Removi props mode se não for usar agora
                     <span className={style.tooltipContent}>Histórico</span>
                 </Link>
             </li>
-
-            <li>
-                <Link 
-                    to="/mapaais" 
-                    className={`${style.tooltip} ${activeLink === '/mapaais' ? style.active : ''}`}
-                >
-                    <FaHistory />
-                    <span className={`${style.link} ${style.hide}`}>Mapa Ais</span>
-                    <span className={style.tooltipContent}>Mapa Ais</span>
-                </Link>
-            </li>
-
             <li>
                 <Link 
                     to="/planejamento" 
@@ -113,6 +102,16 @@ const Sidebar = () => { // Removi props mode se não for usar agora
                   <FaCalculator />
                   <span className={`${style.link} ${style.hide}`}>Planejamento & ROI</span>
                   <span className={style.tooltipContent}>Planejamento</span>
+                </Link>
+            </li>
+            <li>
+                <Link 
+                    to="/chat" 
+                    className={`${style.tooltip} ${activeLink === '/chat' ? style.active : ''}`}
+                >
+                  <FaMessage />
+                  <span className={`${style.link} ${style.hide}`}>Assistente IA</span>
+                  <span className={style.tooltipContent}>Chat</span>
                 </Link>
             </li>
           </ul>  
