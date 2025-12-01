@@ -10,10 +10,7 @@ import Historico from "./components/historicoIWS/historicoIWS";
 import MapaAIS from "./components/mapaAIS/mapaAIS";
 import Planejamento from "./components/planejamentoROI/planejamentoROI";
 import MonitoramentoFrota from "./components/monitoramentoFrota/monitoramentoFrota";
-<<<<<<< HEAD
-=======
 import Chat from "./components/chat/chat";
->>>>>>> chatbot-feat
 import Chatbot from "./components/chatbot/Chatbot";
 import "./App.css";
 
@@ -166,20 +163,12 @@ function App() {
 									naviosResumo={naviosResumo}
 								/>
 							}
-<<<<<<< HEAD
-						/>
-						<Route
-							path="/planejamento"
-							element={<Planejamento />}
-						/>
-=======
 						/>
 						<Route
 							path="/planejamento"
 							element={<Planejamento />}
 						/>
 						<Route path="/chat" element={<Chat />} />
->>>>>>> chatbot-feat
 					</Routes>
 				</main>
 				<Chatbot />

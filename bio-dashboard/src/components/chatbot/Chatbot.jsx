@@ -285,6 +285,50 @@ export default function Chatbot() {
 		}
 
 		let resposta = null;
+
+		// 2. Roteamento de Perguntas
+		try {
+			if (
+				pNormalizada.includes("urgent") ||
+				pNormalizada.includes("atencao") ||
+				pNormalizada.includes("critic")
+			) {
+				resposta = consultarCriticos(dataStore.sugestoes);
+			} else if (
+				pNormalizada.includes("tipo") ||
+				pNormalizada.includes("bioincrust")
+			) {
+				resposta = consultarTiposIncrustacao(dataStore.tipos);
+			} else if (
+				pNormalizada.includes("limp") ||
+				pNormalizada.includes("recomenda")
+			) {
+				resposta = consultarSugestoes(dataStore.sugestoes, pergunta);
+			} else if (
+				pNormalizada.includes("consum") ||
+				pNormalizada.includes("combust")
+			) {
+				resposta = consultarConsumo(dataStore.consumo, pergunta);
+			}
+
+			// 3. Fallback para Resumo Geral (se tiver nome de navio)
+			if (!resposta) {
+				resposta = consultarResumo(dataStore.resumo, pergunta);
+			}
+		} catch (err) {
+			console.error("Erro na lógica de busca:", err);
+		}
+
+		// 4. Resposta ou IA
+		if (resposta) {
+			setChat((c) => [...c, { autor: "bot", texto: resposta }]);
+		} else {
+			// Fallback para IA se não achar nos CSVs
+			try {
+				const resp = await fetch(
+					"https://api.groq.com/openai/v1/chat/completions",
+					{
+						method: "POST",
 						headers: {
 							"Content-Type": "application/json",
 							Authorization: `Bearer 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`,
