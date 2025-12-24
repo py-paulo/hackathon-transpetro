@@ -1,39 +1,41 @@
 # Hackathon Transpetro
 
-## Desafio
+---
 
-> Como usar tecnologias inovadoras para monitorar e prever a bioincrustação, aumentando a eficiência operacional, reduzindo consumo de combustível e apoiando a descarbonização da frota da Transpetro.
+<p align="center">
+  <img src="https://i.pinimg.com/736x/8c/02/5d/8c025d23b5f266443fb8d3f9cfa2dd4d.jpg" alt="NAVIA">
+</p>
 
-A bioincrustação — acúmulo de organismos marinhos como cracas e algas no casco das embarcações — é um dos principais desafios da indústria naval. Esse fenômeno aumenta a resistência hidrodinâmica, eleva o consumo de combustível e intensifica as emissões de gases de efeito estufa. Além disso, a NORMAM 401 estabelece limites regulatórios para o nível de bioincrustação permitido, o que torna o monitoramento contínuo uma necessidade operacional e ambiental.
+<p align="center">
+    <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/py-paulo/hackathon-transpetro">
+    <img alt="PyPI" src="https://img.shields.io/pypi/v/hackathon-transpetro">
+    <img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/hackathon-transpetro">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/py-paulo/hackathon-transpetro">
+    <br>
+    <img alt="GitHub" src="https://img.shields.io/github/license/py-paulo/hackathon-transpetro">
+</p>
 
-Além dos impactos operacionais, existe a exigência regulatória de manter o casco dentro de padrões específicos de bioincrustação, conforme estabelecido pela NORMAM 401. O consumo de combustível é influenciado por múltiplos fatores, incluindo condições ambientais, estado de carregamento da embarcação e carga do motor, o que dificulta a identificação precisa do consumo adicional atribuível exclusivamente à bioincrustação.
+<p align="center">
+  Uma plataforma que integre os dados disponíveis, utilizando algoritmos de Machine Learning para calcular métricas e previsões numéricas, e uma LLM (via RAG - Retrieval-Augmented Generation) para interpretar esses resultados e responder perguntas dos usuários em linguagem natural, melhorando a eficiência das embarcações através de decisões baseadas em dados.
+</p>
 
-Atualmente, a avaliação do nível de bioincrustação depende de inspeções visuais e análises esporádicas de eficiência energética, processos que são custosos, pouco frequentes e muitas vezes tardios. O desafio é criar soluções que utilizem dados e tecnologia para antecipar esse problema, apoiando decisões de manutenção e contribuindo para a descarbonização da frota da Transpetro.
+---
 
-### 🧠 O que buscamos
-
-* Monitorar e prever o nível de bioincrustação nos cascos das embarcações;
-* Estimar o impacto energético e econômico causado pela incrustação;
-* Sugerir o momento ideal para limpeza ou manutenção, com base em dados e cenários operacionais;
-* Apoiar a gestão da eficiência operacional e a redução de emissões de gases de efeito estufa.
-
-### 📊 Dados disponíveis
-
-Os participantes terão acesso a uma base de dados fornecida pela Transpetro, que inclui:
-
-* Dados de automação e navegação (velocidade, GPS, consumo, perfil operacional);
-* Condições ambientais e meteorológicas (vento, ondas, correntes);
-* Registros de inspeções e limpezas do casco;
-* Características técnicas das embarcações (classe, tinta, curvas de potência, deslocamento etc.).
-
-A Transpetro é a maior companhia de logística multimodal de petróleo, derivados e biocombustíveis da América Latina, criada em 1998 como subsidiária integral da Petrobras. A empresa atua de forma integrada, operando terminais, oleodutos, gasodutos e realizando transporte marítimo e terrestre em todo o Brasil. Possui 48 terminais, cerca de 8,5 mil quilômetros de dutos e uma frota de 33 navios, atendendo mais de 160 clientes, incluindo distribuidoras e indústrias petroquímicas.
-
+```
+.
+├── bio-dashboard           # frontend react
+│
+├── code
+│   ├── api                 # backend em nodejs
+│   └── scripts
+│       └── results         # resultado do processamento de dados
+└── data
+    └── Dados_AIS_frota_TP  # Dados disponibilizados da transpetro
+```
 
 ## Proposta de solução
 
 A ideia central é construir uma plataforma que integre os dados disponíveis de consumo, navegação, registros de inspeções, condições ambientais, características das embarcações, entre outros, para realizar análises sobre os impactos de bioincrustações no desempenho dos navios e com base nessas informações geradas, criar previsões sobre estimativas de custos/gasto de combustível e limpeza de forma a melhorar a eficiência dos navios.
-
-> Resumo: Uma plataforma que integre os dados disponíveis, utilizando algoritmos de Machine Learning para calcular métricas e previsões numéricas, e uma LLM (via RAG - Retrieval-Augmented Generation) para interpretar esses resultados e responder perguntas dos usuários em linguagem natural, melhorando a eficiência das embarcações através de decisões baseadas em dados.
 
 ### Pilares da Solução
 
